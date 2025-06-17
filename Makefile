@@ -57,4 +57,4 @@ clean:
 
 # Run the tool
 run:
-	python grc_fixes_monitor/grc_fixes.py -d -o grc_fixes.csv
+	python grc_fixes_monitor/grc_fixes.py -d -o grc_fixes.tsv

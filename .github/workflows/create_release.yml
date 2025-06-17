@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - .devcontainer/**
+      - .vscode/**
+      - docs/**
+      - README.md
+      - LICENSE
+      - .giitignore
+      - .github/workflows/**
   workflow_dispatch:
 
 jobs:
@@ -32,6 +40,11 @@ jobs:
       - name: Run script
         run: |
           make run
+
+      - name: Generate additional release notes
+        run: |
+          python -c 'from grc_fixes_monitor.grc_fixes import GRCFixMonitor; print(f"- URL: {GRCFixMonitor.BASE_URL}")' > /tmp/body.txt
+          awk 'END { print "- No. of entries: " NR-1 }' grc_fixes.tsv >> /tmp/body.txt
       
       - name: Create version
         id: create_version
@@ -43,9 +56,10 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
+          body_path: /tmp/body.txt
           tag_name: v${{ steps.create_version.outputs.version }}
           release_name: Release v${{ steps.create_version.outputs.version }}
           files: |
-            grc_fixes.csv
+            grc_fixes.tsv
           generate_release_notes: true
           token: ${{ github.token }}

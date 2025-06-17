@@ -1,0 +1,4 @@
+#alt_asm_name	prim_asm_name	alt_scaf_name	alt_scaf_acc	parent_type	parent_name	parent_acc	region_name	ori	alt_scaf_start	alt_scaf_stop	parent_start	parent_stop	alt_start_tail	alt_stop_tail
+PATCHES	Primary Assembly	HG1342_HG2282_PATCH	KQ031383.1	CHROMOSOME	1	CM000663.2	PRAME_REGION_1	+	1	467143	12818488	13312803	0	0
+PATCHES	Primary Assembly	HSCHR1_5_CTG3	KQ983255.1	CHROMOSOME	1	CM000663.2	PRAME_REGION_1	+	1	278659	13004385	13312803	0	0
+PATCHES	Primary Assembly	HG1343_HG173_HG459_PATCH	MU273333.1	CHROMOSOME	1	CM000663.2	REGION200	b	1	1572686	16195864	17157486	0	0
