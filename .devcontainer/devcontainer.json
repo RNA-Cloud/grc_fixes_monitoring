@@ -26,7 +26,8 @@
 				"ms-python.vscode-pylance",
 				"ms-azuretools.vscode-docker",
 				"docker.docker",
-				"SanjulaGanepola.github-local-actions"
+				"SanjulaGanepola.github-local-actions",
+				"mechatroner.rainbow-csv"
 			]
 		}
 	}

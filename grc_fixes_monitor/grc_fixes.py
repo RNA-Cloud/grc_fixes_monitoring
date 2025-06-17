@@ -65,6 +65,7 @@ class IssueInfo:
     status: str = ""
     type: str = ""
     last_updated: str = ""
+    experiment_type: str = ""
     affects_version: str = ""
     fix_version: str = ""
     resolution: str = ""
@@ -92,6 +93,7 @@ class FinalRecord:
     status: str = ""
     type: str = ""
     last_updated: str = ""
+    experiment_type: str = ""
     affects_version: str = ""
     fix_version: str = ""
     resolution: str = ""
@@ -268,48 +270,52 @@ class GRCFixMonitor:
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
+
+            issue_info_node = soup.find('div', attrs={'id':'issue-summary'}).find('dl', attrs={'id':'issue_info'})
             
-            # Extract summary using the provided selector
-            try:
-                summary_element = soup.select('#issue-summary #issue_info dd:nth-child(2)')
-                if summary_element:
-                    issue_info.summary = summary_element[0].get_text(strip=True)
-                    logger.debug(f"Found summary for {issue_id}: {issue_info.summary[:50]}...")
-            except Exception as e:
-                logger.warning(f"Could not extract summary for {issue_id}: {e}")
+            if not issue_info_node:
+                logger.warning(f"No issue info found for {issue_id}")
+                raise ValueError(f"No issue info found for {issue_id}")
             
-            # Extract other fields from the issue info section
-            try:
-                issue_info_section = soup.find('dl', id='issue_info')
-                if issue_info_section:
-                    dt_elements = issue_info_section.find_all('dt')
-                    dd_elements = issue_info_section.find_all('dd')
-                    
-                    for dt, dd in zip(dt_elements, dd_elements):
-                        field_name = dt.get_text(strip=True).lower()
-                        field_value = dd.get_text(strip=True)
-                        
-                        if 'description' in field_name:
-                            issue_info.description = field_value
-                        elif 'status' in field_name:
-                            issue_info.status = field_value
-                        elif 'type' in field_name:
-                            issue_info.type = field_value
-                        elif 'last updated' in field_name:
-                            issue_info.last_updated = field_value
-                        elif 'affects version' in field_name:
-                            issue_info.affects_version = field_value
-                        elif 'fix version' in field_name:
-                            issue_info.fix_version = field_value
-                        elif 'resolution' in field_name:
-                            issue_info.resolution = field_value
-                        elif 'scaffold type' in field_name:
-                            issue_info.scaffold_type = field_value
-                        elif 'comment' in field_name:
-                            issue_info.comment = field_value
-                            
-            except Exception as e:
-                logger.warning(f"Could not extract additional fields for {issue_id}: {e}")
+            issue_info_keys = issue_info_node.find_all('dt')
+            issue_info_values = issue_info_node.find_all('dd')
+
+            patches_and_alts_node = soup.find('div', attrs={'id':'patches-and-alts'}).find('dl', attrs={'id':'issue_info'})
+            patches_and_alts_keys = patches_and_alts_node.find_all('dt')
+            patches_and_alts_values = patches_and_alts_node.find_all('dd')
+
+            issue_info_keys_list = [key.get_text(strip=True).replace(':','').lower() for key in issue_info_keys]
+            issue_info_values_list = [re.sub(r'[\t\n\r]+', ' ', value.get_text()) for value in issue_info_values] # type: ignore
+            
+            patches_and_alts_keys_list = [key.get_text(strip=True).replace(':','').lower() for key in patches_and_alts_keys]
+            patches_and_alts_values_list = [re.sub(r'[\t\n\r]+', ' ', value.get_text()) for value in patches_and_alts_values] # type: ignore
+        
+            issue_info_keys_list.extend(patches_and_alts_keys_list)
+            issue_info_values_list.extend(patches_and_alts_values_list)
+
+            for key, value in zip(issue_info_keys_list, issue_info_values_list):
+                if key == 'summary':
+                    issue_info.summary = value
+                elif key == 'description':
+                    issue_info.description = value
+                elif key == 'status':
+                    issue_info.status = value
+                elif key == 'type':
+                    issue_info.type = value
+                elif key == 'last updated':
+                    issue_info.last_updated = value
+                elif key == 'experiment type':
+                    issue_info.experiment_type = value
+                elif key == 'affects version':
+                    issue_info.affects_version = value
+                elif key == 'fix version':
+                    issue_info.fix_version = value
+                elif key == 'resolution':
+                    issue_info.resolution = value
+                elif key == 'scaffold type':
+                    issue_info.scaffold_type = value
+                elif key == 'comment':
+                    issue_info.comment = value
             
             logger.debug(f"Successfully fetched issue info for {issue_id}")
             
@@ -320,7 +326,7 @@ class GRCFixMonitor:
         
         return issue_info
     
-    def process_fixes(self) -> List[FinalRecord]:
+    def process_fixes(self, sample: bool = False) -> List[FinalRecord]:
         """
         Main processing function that combines all steps
         
@@ -335,6 +341,11 @@ class GRCFixMonitor:
         
         # Step 2: Filter for FIX patches
         fix_patch_names = self.filter_fix_patches(patch_types)
+
+        if sample:
+            # If sample mode is enabled, limit the number of FIX patches processed
+            fix_patch_names = fix_patch_names[:10]
+            logger.info(f"Sample mode enabled, processing only {len(fix_patch_names)} FIX patches")
         
         # Create lookup dictionaries
         placement_dict = {p.alt_scaf_name: p for p in placements}
@@ -355,24 +366,8 @@ class GRCFixMonitor:
             issue_ids = self.extract_issue_ids(fix_name)
             
             if not issue_ids:
-                logger.warning(f"No issue IDs found for: {fix_name}")
-                # Create record without issue info
-                record = FinalRecord(
-                    alt_scaf_name=placement.alt_scaf_name,
-                    patch_type=patch_type.patch_type,
-                    parent_type=placement.parent_type,
-                    parent_name=placement.parent_name,
-                    parent_acc=placement.parent_acc,
-                    parent_start=placement.parent_start,
-                    parent_stop=placement.parent_stop,
-                    ori=placement.ori,
-                    alt_scaf_acc=placement.alt_scaf_acc,
-                    alt_scaf_start=placement.alt_scaf_start,
-                    alt_scaf_stop=placement.alt_scaf_stop,
-                    issue_id=""
-                )
-                final_records.append(record)
-                continue
+                logger.error(f"No issue IDs found for: {fix_name}")
+                raise ValueError(f"No issue IDs found for: {fix_name}")
             
             # Fetch issue information for each issue ID
             for issue_id in issue_ids:
@@ -396,6 +391,7 @@ class GRCFixMonitor:
                     status=issue_info.status,
                     type=issue_info.type,
                     last_updated=issue_info.last_updated,
+                    experiment_type=issue_info.experiment_type,
                     affects_version=issue_info.affects_version,
                     fix_version=issue_info.fix_version,
                     resolution=issue_info.resolution,
@@ -407,21 +403,21 @@ class GRCFixMonitor:
         logger.info(f"Processing complete. Generated {len(final_records)} final records")
         return final_records
     
-    def save_to_csv(self, records: List[FinalRecord], output_path: Path) -> None:
+    def save_to_tsv(self, records: List[FinalRecord], output_path: Path) -> None:
         """
-        Save final records to CSV file
+        Save final records to TSV file
         
         Args:
             records: List of FinalRecord objects
-            output_path: Path to output CSV file
+            output_path: Path to output TSV file
         """
         logger.info(f"Saving {len(records)} records to: {output_path}")
         
         try:
-            with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
+            with open(output_path, 'w', newline='', encoding='utf-8') as tsvfile:
                 if records:
                     fieldnames = asdict(records[0]).keys()
-                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                    writer = csv.DictWriter(tsvfile, fieldnames=fieldnames, delimiter='\t')
                     writer.writeheader()
                     
                     for record in records:
@@ -430,7 +426,7 @@ class GRCFixMonitor:
                 logger.info(f"Successfully saved data to: {output_path}")
                 
         except Exception as e:
-            logger.error(f"Failed to save data to CSV: {e}")
+            logger.error(f"Failed to save data to TSV: {e}")
             raise
 
 
@@ -459,6 +455,13 @@ Examples:
         action='store_true',
         help='Enable debug logging for verbose output'
     )
+
+    parser.add_argument(
+        '-s', '--sample',
+        action='store_true',
+        help='Only process a sample of the data for testing purposes (default: False)',
+        default=False
+    )
     
     args = parser.parse_args()
     
@@ -467,14 +470,14 @@ Examples:
         monitor = GRCFixMonitor(debug=args.debug)
         
         # Process the fixes
-        records = monitor.process_fixes()
+        records = monitor.process_fixes(args.sample)
         
         if not records:
             logger.warning("No records generated. Check the logs for errors.")
             sys.exit(1)
         
         # Save results
-        monitor.save_to_csv(records, args.output_file)
+        monitor.save_to_tsv(records, args.output_file)
         
         print(f"✅ Successfully processed {len(records)} records")
         print(f"📄 Output saved to: {args.output_file}")
