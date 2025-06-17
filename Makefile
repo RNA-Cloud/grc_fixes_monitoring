@@ -30,9 +30,6 @@ test:
 test-unit:
 	pytest -v -m unit
 
-test-bdd:
-	pytest -v -m "not unit"
-
 test-coverage:
 	pytest --cov=grc_fix_monitor --cov-report=html --cov-report=term-missing
 
