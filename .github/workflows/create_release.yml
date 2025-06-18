@@ -57,7 +57,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           body_path: /tmp/body.txt
-          tag_name: ${{ steps.create_version.outputs.version_tag }}
+          name: ${{ steps.create_version.outputs.version_tag }}
+          tag_name: ${{ steps.create_version.outputs.version }}
           files: |
             grc_fixes.tsv
           generate_release_notes: true
