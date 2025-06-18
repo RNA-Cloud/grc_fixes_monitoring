@@ -11,6 +11,11 @@
 		}
 	},
 
+	"mounts": [
+		// Map the .ssh directory to enable SSH access.
+		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	],
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 

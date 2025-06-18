@@ -50,13 +50,14 @@ jobs:
         id: create_version
         uses: paulhatch/semantic-version@v5.4.0
         with:
+          tag_prefix: "v"
           bump_each_commit: true
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           body_path: /tmp/body.txt
-          tag_name: ${{ steps.create_version.outputs.version }}
+          tag_name: ${{ steps.create_version.outputs.version_tag }}
           files: |
             grc_fixes.tsv
           generate_release_notes: true
