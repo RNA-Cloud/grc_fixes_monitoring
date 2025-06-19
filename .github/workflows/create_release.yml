@@ -48,17 +48,16 @@ jobs:
       
       - name: Create version
         id: create_version
-        uses: paulhatch/semantic-version@v5.4.0
-        with:
-          tag_prefix: "v"
-          bump_each_commit: true
+        uses: anothrNick/github-tag-action@1.67.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: patch
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           body_path: /tmp/body.txt
-          name: ${{ steps.create_version.outputs.version_tag }}
-          tag_name: ${{ steps.create_version.outputs.version }}
+          tag_name: ${{ steps.create_version.outputs.tag }}
           files: |
             grc_fixes.tsv
           generate_release_notes: true
