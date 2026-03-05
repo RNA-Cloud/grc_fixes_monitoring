@@ -13,15 +13,15 @@ help:
 
 # Testing
 test:
-	pytest -v
+	uv run pytest -v
 
 # Code quality
 lint:
-	flake8 grc_fixes_monitor/grc_fixes.py tests/test_*.py
-	mypy grc_fixes_monitor/grc_fixes.py
+	uv run flake8 grc_fixes_monitor/grc_fixes.py tests/test_*.py
+	uv run mypy grc_fixes_monitor/grc_fixes.py
 
 format:
-	black grc_fixes_monitor/grc_fixes.py tests/test_*.py
+	uv run black grc_fixes_monitor/grc_fixes.py tests/test_*.py
 
 # Cleanup
 clean:
@@ -36,4 +36,4 @@ clean:
 
 # Run the tool
 run:
-	python grc_fixes_monitor/grc_fixes.py -d -o grc_fixes.tsv
+	uv run python grc_fixes_monitor/grc_fixes.py -d -o grc_fixes.tsv
