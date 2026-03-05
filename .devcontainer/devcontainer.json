@@ -10,20 +10,20 @@
 		}
 	},
 
-"containerEnv": {
-	// Explicitly define the path of the uv-managed virtual environment.
-	// Using ".venv" follows the common Python convention and keeps the environment
-	// inside the workspace so editors and shells can locate it easily.
-	"UV_PROJECT_ENVIRONMENT": ".venv",
+	"containerEnv": {
+		// Explicitly define the path of the uv-managed virtual environment.
+		// Using ".venv" follows the common Python convention and keeps the environment
+		// inside the workspace so editors and shells can locate it easily.
+		"UV_PROJECT_ENVIRONMENT": ".venv",
 
-	// Prevent Python from writing .pyc bytecode files and __pycache__ directories.
-	// Keeps the workspace cleaner in container environments and avoids unnecessary file churn.
-	"PYTHONDONTWRITEBYTECODE": "1",
+		// Prevent Python from writing .pyc bytecode files and __pycache__ directories.
+		// Keeps the workspace cleaner in container environments and avoids unnecessary file churn.
+		"PYTHONDONTWRITEBYTECODE": "1",
 
-	// Disable stdout/stderr buffering so output appears immediately.
-	// Useful for real-time logs when running tests, scripts, or CI tasks.
-	"PYTHONUNBUFFERED": "1"
-}
+		// Disable stdout/stderr buffering so output appears immediately.
+		// Useful for real-time logs when running tests, scripts, or CI tasks.
+		"PYTHONUNBUFFERED": "1"
+	},
 
 	"mounts": [
 		// Map the .ssh directory to enable SSH access.
@@ -32,7 +32,7 @@
 
 	"remoteEnv": {
 		"PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -42,12 +42,14 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "uv sync --group dev --frozen",
+
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"mechatroner.rainbow-csv"
+				"mechatroner.rainbow-csv",
+				"redhat.vscode-xml"
 			]
 		}
 	}
