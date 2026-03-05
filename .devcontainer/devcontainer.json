@@ -10,18 +10,29 @@
 		}
 	},
 
-	"containerEnv": {
-		"UV_VENV_IN_PROJECT": "1",
-		// PYTHONDONTWRITEBYTECODE=1
-		"PYTHONDONTWRITEBYTECODE": "1",
-		// PYTHONUNBUFFERED=1
-		"PYTHONUNBUFFERED": "1"
-	},
+"containerEnv": {
+	// Explicitly define the path of the uv-managed virtual environment.
+	// Using ".venv" follows the common Python convention and keeps the environment
+	// inside the workspace so editors and shells can locate it easily.
+	"UV_PROJECT_ENVIRONMENT": ".venv",
+
+	// Prevent Python from writing .pyc bytecode files and __pycache__ directories.
+	// Keeps the workspace cleaner in container environments and avoids unnecessary file churn.
+	"PYTHONDONTWRITEBYTECODE": "1",
+
+	// Disable stdout/stderr buffering so output appears immediately.
+	// Useful for real-time logs when running tests, scripts, or CI tasks.
+	"PYTHONUNBUFFERED": "1"
+}
 
 	"mounts": [
 		// Map the .ssh directory to enable SSH access.
 		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
 	],
+
+	"remoteEnv": {
+		"PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
