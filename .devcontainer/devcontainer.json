@@ -3,18 +3,36 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/python:3-3.12-trixie",
 	"features": {
-		"ghcr.io/dhoeric/features/act:latest": {},
-		"ghcr.io/devcontainers/features/docker-in-docker": {
+		"ghcr.io/devcontainers-extra/features/uv:1": {
 			"version": "latest"
 		}
 	},
+
+"containerEnv": {
+	// Explicitly define the path of the uv-managed virtual environment.
+	// Using ".venv" follows the common Python convention and keeps the environment
+	// inside the workspace so editors and shells can locate it easily.
+	"UV_PROJECT_ENVIRONMENT": ".venv",
+
+	// Prevent Python from writing .pyc bytecode files and __pycache__ directories.
+	// Keeps the workspace cleaner in container environments and avoids unnecessary file churn.
+	"PYTHONDONTWRITEBYTECODE": "1",
+
+	// Disable stdout/stderr buffering so output appears immediately.
+	// Useful for real-time logs when running tests, scripts, or CI tasks.
+	"PYTHONUNBUFFERED": "1"
+}
 
 	"mounts": [
 		// Map the .ssh directory to enable SSH access.
 		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
 	],
+
+	"remoteEnv": {
+		"PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -23,15 +41,12 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt && pip3 install --user -r requirements-dev.txt",
+	"postCreateCommand": "uv sync --group dev --frozen",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"ms-azuretools.vscode-docker",
-				"docker.docker",
-				"SanjulaGanepola.github-local-actions",
 				"mechatroner.rainbow-csv"
 			]
 		}
