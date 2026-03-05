@@ -11,6 +11,7 @@
 	},
 
 	"containerEnv": {
+		"UV_VENV_IN_PROJECT": "1",
 		// PYTHONDONTWRITEBYTECODE=1
 		"PYTHONDONTWRITEBYTECODE": "1",
 		// PYTHONUNBUFFERED=1
@@ -29,7 +30,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt && pip3 install --user -r requirements-dev.txt",
+	"postCreateCommand": "uv sync --group dev",
 	"customizations": {
 		"vscode": {
 			"extensions": [
