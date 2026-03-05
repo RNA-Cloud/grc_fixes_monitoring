@@ -48,7 +48,7 @@ jobs:
 
       - name: Generate additional release notes
         run: |
-          python -c 'from grc_fixes_monitor.grc_fixes import GRCFixMonitor; print(f"- URL: {GRCFixMonitor.BASE_URL}")' > /tmp/body.txt
+          uv run python -c 'from grc_fixes_monitor.grc_fixes import GRCFixMonitor; print(f"- URL: {GRCFixMonitor.BASE_URL}")' > /tmp/body.txt
           awk 'END { print "- No. of entries: " NR-1 }' grc_fixes.tsv >> /tmp/body.txt
       
       - name: Create version
