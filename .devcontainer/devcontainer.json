@@ -41,7 +41,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "uv sync --group dev",
+	"postCreateCommand": "uv sync --group dev --frozen",
 	"customizations": {
 		"vscode": {
 			"extensions": [
