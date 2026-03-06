@@ -20,7 +20,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -30,7 +30,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v7
         with:
-          # Optional: pin for reproducibility, e.g. "0.5.24"
           version: "latest"
           enable-cache: true
 
@@ -42,6 +41,12 @@ jobs:
         run: |
           make test
 
+      - name: Print snapshot date
+        run: |
+          SNAPSHOT_DATE="$(make --no-print-directory print_snapshot_date)"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE" >> "$GITHUB_ENV"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE"
+
       - name: Run script
         run: |
           make run
@@ -49,7 +54,12 @@ jobs:
       - name: Generate additional release notes
         run: |
           uv run python -c 'from grc_fixes_monitor.grc_fixes import GRCFixMonitor; print(f"- URL: {GRCFixMonitor.BASE_URL}")' > /tmp/body.txt
-          awk 'END { print "- No. of entries: " NR-1 }' grc_fixes.tsv >> /tmp/body.txt
+          awk 'END { print "- No. of entries: " NR-1 }' output/grc_fixes.tsv >> /tmp/body.txt
+          echo "Snapshot date: ${SNAPSHOT_DATE}" >> /tmp/body.txt
+
+      - name: Package data snapshot
+        run: |
+          zip -rq "data_${SNAPSHOT_DATE}.zip" data
       
       - name: Create version
         id: create_version
@@ -64,6 +74,7 @@ jobs:
           body_path: /tmp/body.txt
           tag_name: ${{ steps.create_version.outputs.tag }}
           files: |
-            grc_fixes.tsv
+            output/grc_fixes.tsv
+            data_${{ env.SNAPSHOT_DATE }}.zip
           generate_release_notes: true
           token: ${{ github.token }}

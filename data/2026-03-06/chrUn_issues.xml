@@ -1,0 +1,2970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenomeIssues xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/xmlschema/JiraIssues.xsd">
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-1013</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL603926.6</accession1>
+    <accession2>AL603926.6</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>is AL603926.6 redundant?</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Unplaced contig NT_167217.1 may be redundant to reference chromosome 12</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-06-04T13:34:01.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Unplaced contig GL000223.1/NT_167217.1, which is based on a single finished BAC AL603926.6, has been found to be redundant to AC127070.10 (RP11-46H11) and AC073911.38 (RP11-386I8) on Chr 12. It has been removed from the assembly.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000223.1" ref_acc="NT_167217.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>180455</stop>
+        <quality>
+          <version_mapped acc="AL603926">6</version_mapped>
+          <version_mapped acc="AL603926">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000674.2" ref_acc="NC_000012.12" type="CHROMOSOME">12</mapSequence>
+        <start>132925720</start>
+        <stop>133106076</stop>
+        <quality>
+          <version_mapped acc="AL603926">6</version_mapped>
+          <version_mapped acc="AL603926">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-1031</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>CU459201.2</accession1>
+    <accession2>AL022323.7</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>is CU459201.2 redundant?</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Unplaced contig NT_167236.1(CU459201.2) may be redundant with sequence on chr. 22/</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-05-23T15:21:33.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Unplaced contig NT_167236.1, which is based on a single finished cosmid CU459201.2 (SC22CB-37F8), is made redundant at the sequence level under the finished BAC AL022323.7 (CTA-243E7) on Chr 22. It has been removed from the assembly.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000684.2" ref_acc="NC_000022.11" type="CHROMOSOME">22</mapSequence>
+        <start>24970934</start>
+        <stop>25153946</stop>
+        <quality>
+          <version_mapped acc="CU459201">2</version_mapped>
+          <version_mapped acc="AL022323">7</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Sub-task</type>
+    <key>HG-1089</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>NONE</accession1>
+    <accession2>NONE</accession2>
+    <reportType>Genomic Alignment- assembly</reportType>
+    <summary>Confirm scaffold5537_294215_311518.1:1-10457 is a correctly assembled human sequence.</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Confirm that scaffold5537_294215_311518.1:1-10457, a YH1 scaffold described in PMID: 19997067 that does not align to GRCh37.p2 or sequences in NR, is a correctly assembled human sequence.</description>
+    <experiment_type>PCR</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-02-05T18:48:02.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>scaffold5537_294215_311518.1:1-10457 has been confirmed as human sequence by alignment to AEKP01188814.1, a human WGS piece assembled from illumina sequence.  Localization of scaffold5537_294215_311518.1:1-10457 will be worked on in HG-1594</resolution_text>
+    <affectVersion>GRCh37.p2</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000678.2" ref_acc="NC_000016.10" type="CHROMOSOME">16</mapSequence>
+        <start>88366057</start>
+        <stop>88372320</stop>
+        <quality>
+          <version_mapped acc="NONE">1</version_mapped>
+          <version_mapped acc="NONE">1</version_mapped>
+          <method_acc1>curated</method_acc1>
+          <method_acc2>curated</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1100</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL592183.10</accession1>
+    <accession2>AL592183.10</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of AL592183 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Stalled</status>
+    <status_text>Stalling issue as unable to localize AL592183 further using current methods and resources.</status_text>
+    <description>AL592183 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-08-31T07:04:01.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000219.1" ref_acc="NT_167213.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>179198</stop>
+        <quality>
+          <version_mapped acc="AL592183">10</version_mapped>
+          <version_mapped acc="AL592183">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL877872.1" ref_acc="NW_003571034.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>1</start>
+        <stop>144363</stop>
+        <quality>
+          <version_mapped acc="AL592183">10</version_mapped>
+          <version_mapped acc="AL592183">10</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000219.1" ref_acc="NT_167213.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>179198</stop>
+        <quality>
+          <version_mapped acc="AL592183">10</version_mapped>
+          <version_mapped acc="AL592183">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1101</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL592188.60</accession1>
+    <accession2>AL592188.60</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of AL592188 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Stalled</status>
+    <status_text>Stalling issue as unable to localize AL592188 further using current methods and resources.</status_text>
+    <description>AL592188, which contains a complete copy of the 45S rDNA cluster, has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-03-16T08:00:00.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000220.1" ref_acc="NT_167214.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>161802</stop>
+        <quality>
+          <version_mapped acc="AL592188">60</version_mapped>
+          <version_mapped acc="AL592188">60</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000220.1" ref_acc="NT_167214.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>161802</stop>
+        <quality>
+          <version_mapped acc="AL592188">60</version_mapped>
+          <version_mapped acc="AL592188">60</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143377.1" ref_acc="NW_021160023.1" type="ALT_SCAFFOLD">21</mapSequence>
+        <start>330660</start>
+        <stop>492750</stop>
+        <quality>
+          <version_mapped acc="AL592188">60</version_mapped>
+          <version_mapped acc="AL592188">60</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1102</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL590990.36</accession1>
+    <accession2>AL590990.36</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of AL590990 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>AL590990 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:43.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AL590990.36 has been cancelled and removed from the TPF so issue now resolved.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000220.1" ref_acc="NT_167214.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>101857</start>
+        <stop>156767</stop>
+        <quality>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000220.1" ref_acc="NT_167214.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>108702</start>
+        <stop>156621</stop>
+        <quality>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143377.1" ref_acc="NW_021160023.1" type="ALT_SCAFFOLD">21</mapSequence>
+        <start>433246</start>
+        <stop>519076</stop>
+        <quality>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000219.1" ref_acc="NT_167213.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>7140</start>
+        <stop>177860</stop>
+        <quality>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000220.1" ref_acc="NT_167214.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>101857</start>
+        <stop>156621</stop>
+        <quality>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.2" ref_acc="NC_000021.9" type="CHROMOSOME">21</mapSequence>
+        <start>8203074</start>
+        <stop>8471951</stop>
+        <quality>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <version_mapped acc="AL590990">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1105</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL591856.26</accession1>
+    <accession2>AL591856.26</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of AL591856 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Stalled</status>
+    <status_text>Unable to place AL591856 with current methods</status_text>
+    <description>AL591856 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-01T05:08:15.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000224.1" ref_acc="NT_167218.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>179693</stop>
+        <quality>
+          <version_mapped acc="AL591856">26</version_mapped>
+          <version_mapped acc="AL591856">26</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000224.1" ref_acc="NT_167218.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>179693</stop>
+        <quality>
+          <version_mapped acc="AL591856">26</version_mapped>
+          <version_mapped acc="AL591856">26</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1107</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX294097.20</accession1>
+    <accession2>BX294097.20</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of BX294097 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>BX294097 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2012-05-09T02:28:24.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>BX294097.20 has been cancelled and removed from the TPF so issue now resolved.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1108</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX294002.19</accession1>
+    <accession2>BX294002.19</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of BX294002 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Stalled</status>
+    <status_text>Clone BX294002.19 RP3-376K6 is a single block of ALR/Alpha satellite repeat, and with current methods is unable to be localized.</status_text>
+    <description>BX294002 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-01T05:23:09.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000226.1" ref_acc="NT_167220.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>15008</stop>
+        <quality>
+          <version_mapped acc="BX294002">19</version_mapped>
+          <version_mapped acc="BX294002">19</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000226.1" ref_acc="NT_167220.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>15008</stop>
+        <quality>
+          <version_mapped acc="BX294002">19</version_mapped>
+          <version_mapped acc="BX294002">19</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1109</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL929347.8</accession1>
+    <accession2>AL929347.8</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of AL929347 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>AL929347 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-07-02T10:50:06.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AL929347.8 is redundant, completely overlapped by RP1-24O22. It has been removed from the TPF.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000227.1" ref_acc="NT_167221.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>128374</stop>
+        <quality>
+          <version_mapped acc="AL929347">8</version_mapped>
+          <version_mapped acc="AL929347">8</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000668.2" ref_acc="NC_000006.12" type="CHROMOSOME">6</mapSequence>
+        <start>74669</start>
+        <stop>202274</stop>
+        <quality>
+          <version_mapped acc="AL929347">8</version_mapped>
+          <version_mapped acc="AL929347">8</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1120</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>CT998553.2</accession1>
+    <accession2>CT998553.2</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of CT998553 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>CT998553 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-05-23T15:17:05.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>CT998553.2 is completely covered by AC005301 and AP000365 and is therefore redundant.  It has been removed from the TPF.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000238.1" ref_acc="NT_167232.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>39939</stop>
+        <quality>
+          <version_mapped acc="CT998553">2</version_mapped>
+          <version_mapped acc="CT998553">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000684.2" ref_acc="NC_000022.11" type="CHROMOSOME">22</mapSequence>
+        <start>16675680</start>
+        <stop>16715475</stop>
+        <quality>
+          <version_mapped acc="CT998553">2</version_mapped>
+          <version_mapped acc="CT998553">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1127</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>CU459125.1</accession1>
+    <accession2>CU459125.1</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of CU459125 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>CU459125 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-05-23T15:27:05.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>CU459125 has been removed from the Chr Un TPF as it is redundant.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000246.1" ref_acc="NT_167240.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>38154</stop>
+        <quality>
+          <version_mapped acc="CU459125">1</version_mapped>
+          <version_mapped acc="CU459125">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000684.2" ref_acc="NC_000022.11" type="CHROMOSOME">22</mapSequence>
+        <start>16759270</start>
+        <stop>16797442</stop>
+        <quality>
+          <version_mapped acc="CU459125">1</version_mapped>
+          <version_mapped acc="CU459125">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1128</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>CU442762.2</accession1>
+    <accession2>CU442762.2</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of CU442762 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>CU442762 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-05-23T15:28:02.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>CU442762 is completely covered by BX004987 and is therefore redundant and has been removed from the TPF.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000247.1" ref_acc="NT_167241.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>36422</stop>
+        <quality>
+          <version_mapped acc="CU442762">2</version_mapped>
+          <version_mapped acc="CU442762">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000009.2" ref_acc="NT_113796.3" type="UNLOC_SCAFFOLD">14</mapSequence>
+        <start>82766</start>
+        <stop>119185</stop>
+        <quality>
+          <version_mapped acc="CU442762">2</version_mapped>
+          <version_mapped acc="CU442762">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1129</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>CU459200.1</accession1>
+    <accession2>CU459200.1</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of CU459200 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>CU459200 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-05-23T15:29:30.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>CU459200 (SC22cB-33E8) is completely covered by chr.22 clones Z75744, Z81309 and Z69714 and is therefore redundant.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000248.1" ref_acc="NT_167242.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>39786</stop>
+        <quality>
+          <version_mapped acc="CU459200">1</version_mapped>
+          <version_mapped acc="CU459200">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000684.2" ref_acc="NC_000022.11" type="CHROMOSOME">22</mapSequence>
+        <start>32654715</start>
+        <stop>32694487</stop>
+        <quality>
+          <version_mapped acc="CU459200">1</version_mapped>
+          <version_mapped acc="CU459200">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1130</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>CU459188.2</accession1>
+    <accession2>CU459188.2</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Assignment of CU459188 from PMID: 18477386 to chr. Un for GRCh37</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>CU459188 has been placed on Chr. Un b/c it has not been unambiguously localized to a specific chromosome.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-05-23T15:30:27.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>CU459188 is redundant and has been removed from the TPF, therefore issue is resolved.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000249.1" ref_acc="NT_167243.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>38502</stop>
+        <quality>
+          <version_mapped acc="CU459188">2</version_mapped>
+          <version_mapped acc="CU459188">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000684.2" ref_acc="NC_000022.11" type="CHROMOSOME">22</mapSequence>
+        <start>27821121</start>
+        <stop>27859625</stop>
+        <quality>
+          <version_mapped acc="CU459188">2</version_mapped>
+          <version_mapped acc="CU459188">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1283</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC011043.4</accession1>
+    <accession2>AC011043.4</accession2>
+    <reportType>User Report</reportType>
+    <summary>Assignment conflict for chr7 unlocalized sequence</summary>
+    <status>Stalled</status>
+    <status_text>Stalling issue as unable to localize AC011043.4 with current methods</status_text>
+    <description>The unlocalized scaffold represented by GL000195.1 may be incorrectly assigned to chr7, but there is conflicting information as to the correct chromosome assignment.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-01T05:52:17.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000195.1" ref_acc="NT_113901.1" type="UNLOC_SCAFFOLD">7</mapSequence>
+        <start>1</start>
+        <stop>182896</stop>
+        <quality>
+          <version_mapped acc="AC011043">4</version_mapped>
+          <version_mapped acc="AC011043">4</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000195.1" ref_acc="NT_113901.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>182896</stop>
+        <quality>
+          <version_mapped acc="AC011043">4</version_mapped>
+          <version_mapped acc="AC011043">4</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143367.1" ref_acc="NW_021160013.1" type="ALT_SCAFFOLD">14</mapSequence>
+        <start>110344</start>
+        <stop>293240</stop>
+        <quality>
+          <version_mapped acc="AC011043">4</version_mapped>
+          <version_mapped acc="AC011043">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1642</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX572084.5</accession1>
+    <accession2>BX572084.5</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Former 1q21 pericentromeric sequence BX572084.5 needs to be localized</summary>
+    <status>Stalled</status>
+    <status_text>Stalling issue as unable to localize BX572084.5 further with current methods</status_text>
+    <description>Former 1q21 pericentromeric sequence BX572084.5 needs to be localized</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-01T07:55:50.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>142781023</start>
+        <stop>142967761</stop>
+        <quality>
+          <version_mapped acc="BX572084">5</version_mapped>
+          <version_mapped acc="BX572084">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270742.1" ref_acc="NT_187513.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>186739</stop>
+        <quality>
+          <version_mapped acc="BX572084">5</version_mapped>
+          <version_mapped acc="BX572084">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1646</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>FP325314.8</accession1>
+    <accession2>FP325314.8</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Former 1q21 pericentromeric sequence FP325314.8 needs to be localized</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize FP325314 further using current methods</status_text>
+    <description>Former 1q21 pericentromeric sequence FP325314.8 needs to be localized</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-01T09:03:28.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000224.1" ref_acc="NT_167218.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>43471</stop>
+        <quality>
+          <version_mapped acc="FP325314">8</version_mapped>
+          <version_mapped acc="FP325314">8</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000224.1" ref_acc="NT_167218.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>43423</stop>
+        <quality>
+          <version_mapped acc="FP325314">8</version_mapped>
+          <version_mapped acc="FP325314">8</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000224.1" ref_acc="NT_167218.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>43423</stop>
+        <quality>
+          <version_mapped acc="FP325314">8</version_mapped>
+          <version_mapped acc="FP325314">8</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1740</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC116622.6</accession1>
+    <accession2>AC116622.6</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC116622.6 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC116622.6 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:44.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Non-component (GRCh37.p10) HTG sequence AC116622.6 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly. This component cannot be localised at this time and has been added the unlocalised tile path file.</resolution_text>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>190630686</start>
+        <stop>190684480</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000669.1" ref_acc="NC_000007.13" type="CHROMOSOME">7</mapSequence>
+        <start>57605147</start>
+        <stop>57701850</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000679.1" ref_acc="NC_000017.10" type="CHROMOSOME">17</mapSequence>
+        <start>16096378</start>
+        <stop>21566608</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL383561.2" ref_acc="NW_003315950.2" type="ALT_SCAFFOLD">17</mapSequence>
+        <start>255183</start>
+        <stop>331278</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270750.1" ref_acc="NT_187505.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>148850</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-179</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>NONE</accession1>
+    <accession2>NONE</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 100008587 (LOC100008587), missing in assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>GeneID: 100008587 (LOC100008587), missing in assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-06-10T12:39:28.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The region is suitably represented by AL592188 from GRCh37 onwards.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1800</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC138775.3</accession1>
+    <accession2>AC138775.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC138775.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC138775.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-10-12T14:21:43.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC138775.3 has been placed on the &apos;Reference_Unlocalized&apos; TPF for capture in GRCh38</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>142550747</start>
+        <stop>142920357</stop>
+        <quality>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>142550747</start>
+        <stop>143496942</stop>
+        <quality>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270743.1" ref_acc="NT_187498.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>210658</stop>
+        <quality>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1801</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC138775.3</accession1>
+    <accession2>AC138775.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Unlocalized Component AC138775.3 (RP11-1247B7) needs to be localized.</summary>
+    <status>Stalled</status>
+    <status_text>unable to localize AC138775.3 further using current methods</status_text>
+    <description>Unlocalized Component AC138775.3 (RP11-1247B7) needs to be localized.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-06T06:51:41.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>142550747</start>
+        <stop>142920357</stop>
+        <quality>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>142550747</start>
+        <stop>143496942</stop>
+        <quality>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270743.1" ref_acc="NT_187498.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>210658</stop>
+        <quality>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <version_mapped acc="AC138775">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1803</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC237676.1</accession1>
+    <accession2>AC237676.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC237676.1 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC237676.1 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-10-12T14:21:43.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC237676.1 was added to the Chrom. UNLOCALIZED TPF to capture this decoy sequence for GRCh38.</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000214.1" ref_acc="NT_167209.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>53104</start>
+        <stop>129202</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>25701</start>
+        <stop>49551453</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KE332496.1" ref_acc="NW_004775427.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>15701</start>
+        <stop>58825</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>25701</start>
+        <stop>68717</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000218.1" ref_acc="NT_113889.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>14302</start>
+        <stop>61201</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270744.1" ref_acc="NT_187499.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>168472</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143345.1" ref_acc="NW_021159991.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>225771</start>
+        <stop>339177</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1804</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC237676.1</accession1>
+    <accession2>AC237676.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Decoy sequence AC237676.1, currently placed on the Chrom. UN TPF, needs localized.</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC237676.1 further using current methods</status_text>
+    <description>Decoy sequence AC237676.1, currently placed on the Chrom. UN TPF, needs localized.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-06T07:16:36.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000214.1" ref_acc="NT_167209.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>53104</start>
+        <stop>129202</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>25701</start>
+        <stop>49551453</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KE332496.1" ref_acc="NW_004775427.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>15701</start>
+        <stop>58825</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>25701</start>
+        <stop>68717</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000218.1" ref_acc="NT_113889.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>14302</start>
+        <stop>61201</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270744.1" ref_acc="NT_187499.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>168472</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143345.1" ref_acc="NW_021159991.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>225771</start>
+        <stop>339177</stop>
+        <quality>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <version_mapped acc="AC237676">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1828</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC137817.1</accession1>
+    <accession2>AC137817.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC137817.1 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC137817.1 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:41.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC137817.1 has been added to the unplaced reference assembly  to capture sequence present in the 1kG ph1 decoy that was absent from the Reference assembly.</resolution_text>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>656365</start>
+        <stop>687951</stop>
+        <quality>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000667.1" ref_acc="NC_000005.9" type="CHROMOSOME">5</mapSequence>
+        <start>180734744</start>
+        <stop>180902834</stop>
+        <quality>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270745.1" ref_acc="NT_187500.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>41891</stop>
+        <quality>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1900</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX649379.10</accession1>
+    <accession2>BX649379.10</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence BX649379.10 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence BX649379.10 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-10-12T14:21:41.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>BX649379.10 has been added to Chr. Un for GRCh38 in order to capture the decoy sequence.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000668.1" ref_acc="NC_000006.11" type="CHROMOSOME">6</mapSequence>
+        <start>170958026</start>
+        <stop>171045471</stop>
+        <quality>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000667.1" ref_acc="NC_000005.9" type="CHROMOSOME">5</mapSequence>
+        <start>180803619</start>
+        <stop>180889843</stop>
+        <quality>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270748.1" ref_acc="NT_187503.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>93321</stop>
+        <quality>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1902</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC144612.3</accession1>
+    <accession2>AC144612.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC144612.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC144612.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2019-11-05T10:16:24.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC144612.3 has been added to Chr Un TPF in order to capture the decoy for GRCh38. Its localization will be tracked in HG-1963</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000671.1" ref_acc="NC_000009.11" type="CHROMOSOME">9</mapSequence>
+        <start>70154023</start>
+        <stop>70175101</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>97838430</start>
+        <stop>97917146</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>90424491</start>
+        <stop>90446319</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.1" ref_acc="NC_000021.8" type="CHROMOSOME">21</mapSequence>
+        <start>9461118</start>
+        <stop>11044852</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>91973815</start>
+        <stop>91995756</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.1" ref_acc="NC_000021.8" type="CHROMOSOME">21</mapSequence>
+        <start>11020084</start>
+        <stop>11044852</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270746.1" ref_acc="NT_187501.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>66486</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143378.1" ref_acc="NW_021160024.1" type="ALT_SCAFFOLD">22</mapSequence>
+        <start>259050</start>
+        <stop>357435</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1905</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC127380.4</accession1>
+    <accession2>AC127380.4</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC127380.4 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC127380.4 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:45.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC127380.4 has been added to Chr Un TPF in order to capture the decoy for GRCh38.  Its localization will be tracked in HG-1939</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>89841810</start>
+        <stop>90459189</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000678.1" ref_acc="NC_000016.9" type="CHROMOSOME">16</mapSequence>
+        <start>32822729</start>
+        <stop>46469228</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>92220659</start>
+        <stop>92272583</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000678.1" ref_acc="NC_000016.9" type="CHROMOSOME">16</mapSequence>
+        <start>46418387</start>
+        <stop>46490075</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270747.1" ref_acc="NT_187502.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>198735</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1912</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX649379.10</accession1>
+    <accession2>BX649379.10</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>BX649379.10 has been added to Chr. Un for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize BX649379.10 using current methods</status_text>
+    <description>BX649379.10 has been added to Chr. Un for GRCh38</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-06T08:19:07.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000668.1" ref_acc="NC_000006.11" type="CHROMOSOME">6</mapSequence>
+        <start>170958026</start>
+        <stop>171045471</stop>
+        <quality>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000667.1" ref_acc="NC_000005.9" type="CHROMOSOME">5</mapSequence>
+        <start>180803619</start>
+        <stop>180889843</stop>
+        <quality>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270748.1" ref_acc="NT_187503.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>93321</stop>
+        <quality>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <version_mapped acc="BX649379">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1913</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC144916.3</accession1>
+    <accession2>AC144916.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC144916.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC144916.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:44.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC144916.3 has been added to Chr Un TPF in order to capture the decoy for GRCh38</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.1" ref_acc="NC_000021.8" type="CHROMOSOME">21</mapSequence>
+        <start>9411589</start>
+        <stop>9567336</stop>
+        <quality>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270749.1" ref_acc="NT_187504.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>158759</stop>
+        <quality>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1914</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC144916.3</accession1>
+    <accession2>AC144916.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC144916.3 has been added to Chr Un for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC144916.3 using current methods.</status_text>
+    <description>AC144916.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly.&#xa;Placement is uncertain so AC144916.3 has been added to Chr. Un for GRCh38.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-06T08:53:48.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.1" ref_acc="NC_000021.8" type="CHROMOSOME">21</mapSequence>
+        <start>9411589</start>
+        <stop>9567336</stop>
+        <quality>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270749.1" ref_acc="NT_187504.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>158759</stop>
+        <quality>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <version_mapped acc="AC144916">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1917</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC147649.2</accession1>
+    <accession2>AC147649.2</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC147649.2 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC147649.2 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:39.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AC147649.2 has been added to Chr Un TPF in order to capture the decoy for GRCh38</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000214.1" ref_acc="NT_167209.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>104084</stop>
+        <quality>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL877871.1" ref_acc="NW_003571032.1" type="ALT_SCAFFOLD">2</mapSequence>
+        <start>227751</start>
+        <stop>365911</stop>
+        <quality>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270751.1" ref_acc="NT_187506.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>150742</stop>
+        <quality>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1918</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC147649.2</accession1>
+    <accession2>AC147649.2</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC147649.2 has been added to Chr Un for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC147649.2 using current methods.</status_text>
+    <description>AC147649.2 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly. &#xa;Placement is uncertain so AC147649.2 has been added to Chr. Un for GRCh38.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-06T09:39:00.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000214.1" ref_acc="NT_167209.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>104084</stop>
+        <quality>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL877871.1" ref_acc="NW_003571032.1" type="ALT_SCAFFOLD">2</mapSequence>
+        <start>227751</start>
+        <stop>365911</stop>
+        <quality>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270751.1" ref_acc="NT_187506.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>150742</stop>
+        <quality>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <version_mapped acc="AC147649">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1934</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AF065393.1</accession1>
+    <accession2>AF065393.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AF065393.1 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AF065393.1 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:24:36.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AF065393.1 has been added to ChrUn TPF to capture the decoy sequence for GRCh38</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1935</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AF065393.1</accession1>
+    <accession2>AF065393.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AF065393.1 added to Chr Un for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AF065393.1 using current methods</status_text>
+    <description>AF065393.1 added to Chr Un for GRCh38</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2021-02-22T22:47:06.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1939</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC127380.4</accession1>
+    <accession2>AC127380.4</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC127380.4 has been added to Chr Un for GRCh38</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>AC127380.4 has been added to Chr Un for GRCh38</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-10-03T09:19:48.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Finished component AC127380.4 has been localised to chromosome 9 proximal to the centromere. This clone component replaces WGS contigs ABBA01045070.1, ABBA01045069.1, ABBA01045068.1, ABBA01045067.1 and ABBA01045066.1 in the reference assembly.</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>89841810</start>
+        <stop>90459189</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000678.1" ref_acc="NC_000016.9" type="CHROMOSOME">16</mapSequence>
+        <start>32822729</start>
+        <stop>46469228</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>92220659</start>
+        <stop>92272583</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000678.1" ref_acc="NC_000016.9" type="CHROMOSOME">16</mapSequence>
+        <start>46418387</start>
+        <stop>46490075</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270747.1" ref_acc="NT_187502.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>198735</stop>
+        <quality>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <version_mapped acc="AC127380">4</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1963</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC144612.3</accession1>
+    <accession2>AC144612.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC144612.3 has been added to Chr Un for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC144612.3 further using current methods</status_text>
+    <description>AC144612.3 has been added to Chr Un for GRCh38</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-13T07:31:20.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000671.1" ref_acc="NC_000009.11" type="CHROMOSOME">9</mapSequence>
+        <start>70154023</start>
+        <stop>70175101</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>97838430</start>
+        <stop>97917146</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>90424491</start>
+        <stop>90446319</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.1" ref_acc="NC_000021.8" type="CHROMOSOME">21</mapSequence>
+        <start>9461118</start>
+        <stop>11044852</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000664.1" ref_acc="NC_000002.11" type="CHROMOSOME">2</mapSequence>
+        <start>91973815</start>
+        <stop>91995756</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.1" ref_acc="NC_000021.8" type="CHROMOSOME">21</mapSequence>
+        <start>11020084</start>
+        <stop>11044852</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270746.1" ref_acc="NT_187501.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>66486</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143378.1" ref_acc="NW_021160024.1" type="ALT_SCAFFOLD">22</mapSequence>
+        <start>259050</start>
+        <stop>357435</stop>
+        <quality>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <version_mapped acc="AC144612">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1964</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC116622.6</accession1>
+    <accession2>AC116622.6</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC116622.6 has been added to ChrUn for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC116622.6 further using current methods</status_text>
+    <description>AC116622.6 has been added to ChrUn for GRCh38 (NT_187505.1). This is thought to represent a copy of an inter-chromosomal segmental duplication originating from chr. 4. See HG-1602 and PMID 21030649 (Supp. Fig. S24) for more info. A portion of this sequence was also a part of the 1000G phase 1 decoy for GRCh37.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-13T08:24:04.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>190630686</start>
+        <stop>190684480</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000669.1" ref_acc="NC_000007.13" type="CHROMOSOME">7</mapSequence>
+        <start>57605147</start>
+        <stop>57701850</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000679.1" ref_acc="NC_000017.10" type="CHROMOSOME">17</mapSequence>
+        <start>16096378</start>
+        <stop>21566608</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL383561.2" ref_acc="NW_003315950.2" type="ALT_SCAFFOLD">17</mapSequence>
+        <start>255183</start>
+        <stop>331278</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270750.1" ref_acc="NT_187505.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>148850</stop>
+        <quality>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <version_mapped acc="AC116622">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1965</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC137817.1</accession1>
+    <accession2>AC137817.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC137817.1 has been added to ChrUn for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC137817.1 further with current methods</status_text>
+    <description>AC137817.1 has been added to ChrUn for GRCh38</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-13T09:07:04.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000663.1" ref_acc="NC_000001.10" type="CHROMOSOME">1</mapSequence>
+        <start>656365</start>
+        <stop>687951</stop>
+        <quality>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000667.1" ref_acc="NC_000005.9" type="CHROMOSOME">5</mapSequence>
+        <start>180734744</start>
+        <stop>180902834</stop>
+        <quality>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270745.1" ref_acc="NT_187500.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>41891</stop>
+        <quality>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <version_mapped acc="AC137817">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1966</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC234343.3</accession1>
+    <accession2>AC234339.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC234343.3 and AC234339.3 have been added as a ChrUn scaffold for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC234343.3 and AC234339.3 further with current methods.</status_text>
+    <description>AC234343.3 and AC234339.3 have been added to ChrUn for as an unplaced scaffold to GRCh38. These are thought to represent copies of an inter-chromosomal segmental duplication originating from chr. 4. See HG-1602 and PMID 21030649 (Supp. Fig. S24) for more info.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-13T09:11:15.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>190551753</start>
+        <stop>190618376</stop>
+        <quality>
+          <version_mapped acc="AC234343">3</version_mapped>
+          <version_mapped acc="AC234339">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270753.1" ref_acc="NT_187508.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>62944</stop>
+        <quality>
+          <version_mapped acc="AC234343">3</version_mapped>
+          <version_mapped acc="AC234339">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-200</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>NONE</accession1>
+    <accession2>NONE</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 100008589 (LOC100008589), missing in assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>GeneID: 100008589 (LOC100008589), missing in assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-06-10T12:38:36.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The region is suitably represented by AL592188 from GRCh37 onwards.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-201</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>NONE</accession1>
+    <accession2>NONE</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 100008588 (LOC100008588), missing in assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>GeneID: 100008588 (LOC100008588), missing in assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2013-06-10T12:37:47.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The region is suitably represented by AL592188 from GRCh37 onwards.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-2011</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC215209.2</accession1>
+    <accession2>AC215209.2</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC215209.2 has been added to ChrUn for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC215209.2 further with current methods</status_text>
+    <description>AC215209.2 has been added to ChrUn for GRCh38 (NT_187509.1). This is thought to represent a copy of an inter-chromosomal segmental duplication originating from chr. 4. See HG-1602 and PMID 21030649 (Supp. Fig. S24) for more info.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-15T07:01:50.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000193.1" ref_acc="NT_113885.1" type="UNLOC_SCAFFOLD">4</mapSequence>
+        <start>64823</start>
+        <stop>106357</stop>
+        <quality>
+          <version_mapped acc="AC215209">2</version_mapped>
+          <version_mapped acc="AC215209">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000193.1" ref_acc="NT_113885.1" type="UNLOC_SCAFFOLD">4</mapSequence>
+        <start>64823</start>
+        <stop>104934</stop>
+        <quality>
+          <version_mapped acc="AC215209">2</version_mapped>
+          <version_mapped acc="AC215209">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270754.1" ref_acc="NT_187509.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>40191</stop>
+        <quality>
+          <version_mapped acc="AC215209">2</version_mapped>
+          <version_mapped acc="AC215209">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-2012</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AC207774.3</accession1>
+    <accession2>AC207774.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>AC207774.3 has been added to ChrUn for GRCh38</summary>
+    <status>Stalled</status>
+    <status_text>Unable to localize AC207774.3 further using current methods.</status_text>
+    <description>AC207774.3 has been added to ChrUn for GRCh38 (NT_187510.1). This is thought to represent a copy of an inter-chromosomal segmental duplication originating from chr. 4. See HG-1602 and PMID 21030649 (Supp. Fig. S24) for more info.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-09-15T07:46:08.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000666.1" ref_acc="NC_000004.11" type="CHROMOSOME">4</mapSequence>
+        <start>190589933</start>
+        <stop>190624161</stop>
+        <quality>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270755.1" ref_acc="NT_187510.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>36723</stop>
+        <quality>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270786.1" ref_acc="NT_187543.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>2332</start>
+        <stop>36560</stop>
+        <quality>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270896.1" ref_acc="NT_187650.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>2332</start>
+        <stop>36560</stop>
+        <quality>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270925.1" ref_acc="NT_187679.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>316394</start>
+        <stop>351736</stop>
+        <quality>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <version_mapped acc="AC207774">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-2587</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AF065393.1</accession1>
+    <accession2>AF065393.1</accession2>
+    <reportType>User Report</reportType>
+    <summary>Chr Un scaffold is wholly comprised of sequence from Chinese Hamster</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>AF065393.1, the sole component of GRCh38 chr Un scaffold KI270752.1 (HSCHRUN_RANDOM_CTG29) has been reported as non-human sequence.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2021-02-23T00:44:30.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Analysis demonstrates that AF065393.1, the sole component of GRCh38 chr Un scaffold KI270752.1 (HSCHRUN_RANDOM_CTG29) is hamster sequence, likely derived from the human-hamster CHO cell line (the source of the clone). RefSeq has removed this scaffold from their component of the assembly. Removal of this sequence from the GenBank assembly can only be done at the time of a new major assembly release.</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-630</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL354822.8</accession1>
+    <accession2>AL354822.8</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>GeneID: 389834 (LOC389834) has best representation on unplaced contig</summary>
+    <status>Under Review</status>
+    <status_text>This component has been moved from Chr. 4 UNLOCALIZED to Chr. Un.</status_text>
+    <description>Unplaced component AL354822.8 is the unique best hit for RefSeq NM_001013655.2</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-08-24T09:48:15.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000218.1" ref_acc="NT_113889.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>161147</stop>
+        <quality>
+          <version_mapped acc="AL354822">8</version_mapped>
+          <version_mapped acc="AL354822">8</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL877871.1" ref_acc="NW_003571032.1" type="ALT_SCAFFOLD">2</mapSequence>
+        <start>200549</start>
+        <stop>361015</stop>
+        <quality>
+          <version_mapped acc="AL354822">8</version_mapped>
+          <version_mapped acc="AL354822">8</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000218.1" ref_acc="NT_113889.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>161147</stop>
+        <quality>
+          <version_mapped acc="AL354822">8</version_mapped>
+          <version_mapped acc="AL354822">8</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-789</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX072566.10</accession1>
+    <accession2>BX072566.10</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>BX072566 added to chr.Un</summary>
+    <status>Stalled</status>
+    <status_text>Unable to accurately place BX072566 using current methods.</status_text>
+    <description>Assignment of unplaced BX072566 to the reference genome is questionable</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-08-29T08:12:05.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>BX072566 and AL162851 have been removed from Chr Un as they have been found to be redundant on Chr21</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000213.1" ref_acc="NT_167208.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>164239</stop>
+        <quality>
+          <version_mapped acc="BX072566">10</version_mapped>
+          <version_mapped acc="BX072566">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000213.1" ref_acc="NT_167208.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>164239</stop>
+        <quality>
+          <version_mapped acc="BX072566">10</version_mapped>
+          <version_mapped acc="BX072566">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-790</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL137218.5</accession1>
+    <accession2>AL137218.5</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>AL137218 added to chr.Un</summary>
+    <status>Stalled</status>
+    <status_text>Unable to place AL137218 with current methods</status_text>
+    <description>Assignment of unplaced AL137218 to the reference genome is questionable</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-08-29T09:21:53.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000214.1" ref_acc="NT_167209.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>137718</stop>
+        <quality>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL877871.1" ref_acc="NW_003571032.1" type="ALT_SCAFFOLD">2</mapSequence>
+        <start>227751</start>
+        <stop>367997</stop>
+        <quality>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000214.1" ref_acc="NT_167209.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>137718</stop>
+        <quality>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="ML143345.1" ref_acc="NW_021159991.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>81911</start>
+        <stop>341066</stop>
+        <quality>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <version_mapped acc="AL137218">5</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-791</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>AL162851.10</accession1>
+    <accession2>AL162851.10</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>AL162851 added to chr.Un</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Assignment of unplaced AL162851 to the reference genome is questionable</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2012-08-08T02:38:34.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>BX072566 and AL162851 have been removed from Chr Un as they have been found to be redundant on Chr21</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000215.1" ref_acc="NT_167210.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>172545</stop>
+        <quality>
+          <version_mapped acc="AL162851">10</version_mapped>
+          <version_mapped acc="AL162851">10</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000683.2" ref_acc="NC_000021.9" type="CHROMOSOME">21</mapSequence>
+        <start>6790780</start>
+        <stop>13828253</stop>
+        <quality>
+          <version_mapped acc="AL162851">10</version_mapped>
+          <version_mapped acc="AL162851">10</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-792</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>BX546479.5</accession1>
+    <accession2>BX546479.5</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>BX546479 added to chr. Un</summary>
+    <status>Stalled</status>
+    <status_text>Unable to place BX546479 with current methods</status_text>
+    <description>Assignment of unplaced BX546479 to the reference genome is questionable</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-08-29T09:53:46.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000216.1" ref_acc="NT_167211.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>1</start>
+        <stop>172294</stop>
+        <quality>
+          <version_mapped acc="BX546479">5</version_mapped>
+          <version_mapped acc="BX546479">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000216.2" ref_acc="NT_167211.2" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>4315</start>
+        <stop>176608</stop>
+        <quality>
+          <version_mapped acc="BX546479">5</version_mapped>
+          <version_mapped acc="BX546479">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-993</key>
+    <assignedChr>chrUn</assignedChr>
+    <accession1>NONE</accession1>
+    <accession2>NONE</accession2>
+    <reportType>User Report</reportType>
+    <summary>Request to include one copy of the ribosomal sequence in the assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>User request to add at least one copy of the ribosomal DNA in the reference assembly.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-05T06:02:54.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>There is a representation of the rDNA cluster on NT_167214.1, an unplaced sequence in GRCh37.</resolution_text>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+</GenomeIssues>
