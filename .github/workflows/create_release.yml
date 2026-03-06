@@ -53,6 +53,7 @@ jobs:
         run: |
           uv run python -c 'from grc_fixes_monitor.grc_fixes import GRCFixMonitor; print(f"- URL: {GRCFixMonitor.BASE_URL}")' > /tmp/body.txt
           awk 'END { print "- No. of entries: " NR-1 }' output/grc_fixes.tsv >> /tmp/body.txt
+          echo "Snapshot date: $(make --no-print-directory print_snapshot_date)" >> /tmp/body.txt
       
       - name: Create version
         id: create_version
