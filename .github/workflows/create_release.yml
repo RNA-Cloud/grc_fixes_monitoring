@@ -53,8 +53,8 @@ jobs:
 
       - name: Generate additional release notes
         run: |
-          awk 'END { print "- No. of entries: " NR-1 }' output/grc_fixes.tsv >> /tmp/body.txt
-          echo "Snapshot date: ${SNAPSHOT_DATE}" >> /tmp/body.txt
+           awk '$1~/^HG/ {c++} END { print "- No. of entries: " c }' output/grc_fixes.tsv >> /tmp/body.txt
+          echo "- Snapshot date: ${SNAPSHOT_DATE}" >> /tmp/body.txt
 
       - name: Package data snapshot
         run: |
