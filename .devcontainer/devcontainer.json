@@ -50,7 +50,8 @@
 				"ms-python.vscode-pylance",
 				"mechatroner.rainbow-csv",
 				"redhat.vscode-xml",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"openai.chatgpt"
 			]
 		}
 	}
