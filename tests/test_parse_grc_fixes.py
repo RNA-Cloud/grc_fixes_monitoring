@@ -190,5 +190,5 @@ def test_main_exits_when_issue_is_missing(
         ],
     )
 
-    with pytest.raises(SystemExit, match="1"):
+    with pytest.raises(ValueError):
         main()
