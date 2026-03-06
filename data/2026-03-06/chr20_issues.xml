@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenomeIssues xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/xmlschema/JiraIssues.xsd">
+  <issue>
+    <type>Gap</type>
+    <key>HG-1000</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>BX640513.2</accession1>
+    <accession2>AL450469.11</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>FIX patch for Chr.20 Gap Problem (left side)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is an assembly gap between between accessions BX640513.2 and AL450469.11. A gap extension from the left hand side is being considered for a patch release.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:45.000-0400</update>
+    <resolution>GRC-Duplicate</resolution>
+    <resolution_text>An extension from the left side of this gap was released as a FIX patch: GL582979.1. This patch provides additional sequence for the gap located between components BX640513.2  and AL450469.11 in reference chromosome NC_000020.10. There is another ticket describing a FIX patch that extends into this gap from the right side in HG-1411.</resolution_text>
+    <AltPatchType>GRCh37:FIX</AltPatchType>
+    <patchInfo gb_acc="GL582979.2" ref_acc="NW_003571063.2" region_name="REGION53"/>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh37.p3,GRCh37.p9</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>61211869</start>
+        <stop>61267733</stop>
+        <quality>
+          <version_mapped acc="BX640513">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL582979.2" ref_acc="NW_003571063.2" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>156180</start>
+        <stop>179899</stop>
+        <quality>
+          <version_mapped acc="BX640513">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>62612662</start>
+        <stop>62636381</stop>
+        <quality>
+          <version_mapped acc="BX640513">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-1136</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AC140113.3</accession1>
+    <accession2>AC134878.3</accession2>
+    <reportType>Genomic Alignment- assembly</reportType>
+    <summary>Related sequence missing from GRCh37?</summary>
+    <status>Awaiting Exptl Data</status>
+    <status_text>We will attempt PCR to determine if this sequence should be present in the Reference.</status_text>
+    <description>Alignments of YH1 and HuRef to GRCh37 indicate there may be sequence related to this region of Chr. 20 that is missing from GRCh37.</description>
+    <experiment_type>PCR</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:10.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000686.1" ref_acc="NC_000024.9" type="CHROMOSOME">Y</mapSequence>
+        <start>13193955</start>
+        <stop>13401114</stop>
+        <quality>
+          <version_mapped acc="AC140113">3</version_mapped>
+          <version_mapped acc="AC134878">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000686.2" ref_acc="NC_000024.10" type="CHROMOSOME">Y</mapSequence>
+        <start>11038279</start>
+        <stop>11245438</stop>
+        <quality>
+          <version_mapped acc="AC140113">3</version_mapped>
+          <version_mapped acc="AC134878">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-114</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL121753.30</accession1>
+    <accession2>AL121753.30</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 10893 (MMP24), missing in assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Possible assembly error or missing sequence from reference component AL121753.30 that affects MMP24 (GeneID: 10893)</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2010-03-30T18:20:31.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Component AL121753 has been updated and now contains the missing exon.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>33778084</start>
+        <stop>33928811</stop>
+        <quality>
+          <version_mapped acc="AL121753">30</version_mapped>
+          <version_mapped acc="AL121753">30</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>35190281</start>
+        <stop>35341008</stop>
+        <quality>
+          <version_mapped acc="AL121753">30</version_mapped>
+          <version_mapped acc="AL121753">30</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1141</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL645732.1</accession1>
+    <accession2>FP929141.6</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Gap between AL645732 and FP929141</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap between AL645732 and FP929141.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-10-29T13:58:35.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>There is alignment between AL645732 and AL360078, so the gap no longer exists.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>81360</start>
+        <stop>245425</stop>
+        <quality>
+          <version_mapped acc="AL645732">1</version_mapped>
+          <version_mapped acc="FP929141">6</version_mapped>
+          <method_acc1>curated</method_acc1>
+          <method_acc2>curated</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>NOT MAPPED</mapStatus>
+        <mapSequence gb_acc="na" ref_acc="na" type="na">na</mapSequence>
+        <start>na</start>
+        <stop>na</stop>
+        <quality>
+          <version_mapped acc="na">na</version_mapped>
+          <version_mapped acc="na">na</version_mapped>
+          <method_acc1>na</method_acc1>
+          <method_acc2>na</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Variation</type>
+    <key>HG-1190</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL035045.5</accession1>
+    <accession2>AL035045.5</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>NOVEL patch created to capture sequence from AC207480.4 not represented in reference chromosome</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>NOVEL patch GL383577.1 created to capture sequence from AC207480.4 not represented in reference chromosome</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-10-01T14:59:18.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>NOVEL patch GL383577.1 created to capture sequence from AC207480.4 not represented in reference chromosome</resolution_text>
+    <AltPatchType>GRCh38:ALT</AltPatchType>
+    <patchInfo gb_acc="GL383577.2" ref_acc="NW_003315966.2" region_name="REGION40"/>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh37.p2,GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>17751747</start>
+        <stop>17874115</stop>
+        <quality>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL383577.1" ref_acc="NW_003315966.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>1</start>
+        <stop>128385</stop>
+        <quality>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>17771102</start>
+        <stop>17893471</stop>
+        <quality>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL383577.2" ref_acc="NW_003315966.2" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>1</start>
+        <stop>128386</stop>
+        <quality>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <version_mapped acc="AL035045">5</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-1214</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>ABBA01031662.1</accession1>
+    <accession2>ABBA01031662.1</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 647476 (FRG2EP), has a poor alignment to the reference</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>NR_037925.1 does not align well with the Reference GRCh37 ABBA01031662.1 is part of the GRCh38 assembly and resides at NC_000020.11:29413578-29447838. So NR_037925.1 aligns to chromosome 20</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2019-11-05T00:08:15.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>NR_037925.1 has a good alignment to ABBA01031662.1 which is now part of the GRCh38 assembly and resides at NC_000020.11:29413578-29447838.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000665.1" ref_acc="NC_000003.11" type="CHROMOSOME">3</mapSequence>
+        <start>75690237</start>
+        <stop>75716862</stop>
+        <quality>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000222.1" ref_acc="NT_167216.1" type="UNLOC_SCAFFOLD">Un</mapSequence>
+        <start>85929</start>
+        <stop>112547</stop>
+        <quality>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL877872.1" ref_acc="NW_003571034.1" type="ALT_SCAFFOLD">4</mapSequence>
+        <start>116792</start>
+        <stop>144360</stop>
+        <quality>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>29413578</start>
+        <stop>29447838</stop>
+        <quality>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <version_mapped acc="ABBA01031662">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-1286</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL837517.14</accession1>
+    <accession2>AL837517.14</accession2>
+    <reportType>User Report</reportType>
+    <summary>Unlocalized scaffold assigned to chromosome 9 may actually map to chr20.</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Unlocalized scaffold GL000198.1 is currently unlocalized on chr9, but new evidence suggests that it may map to chr20.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-10-12T14:21:44.000-0400</update>
+    <resolution>GRC-Duplicate</resolution>
+    <resolution_text>The issue reported in this ticket is identical to the one reported in HG-662. This ticket will be resolved and all future work on this issue will be recorded in HG-662.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000198.1" ref_acc="NT_113914.1" type="UNLOC_SCAFFOLD">9</mapSequence>
+        <start>1</start>
+        <stop>90085</stop>
+        <quality>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>28958247</start>
+        <stop>29048331</stop>
+        <quality>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-1348</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL132765.38</accession1>
+    <accession2>AL132765.38</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 6238 (RRBP1), missing in assembly</summary>
+    <status>Stalled</status>
+    <status_text>Comparing AL132765.38 vs other available assemblies their appears to be no problem with the clone. Optical mapping indicates variation GM15510 agrees with the ref but other maps show 6-8kb missing. No other clone sequences match this region and other available assemblies at this time don&apos;t have the missing sequence. Until new assemblies are available this issue will be stalled</status_text>
+    <description>The genome region lacks the decapeptide repeat observed in the canine ortholog. Misc_feat annotation in AL132765.38:104908..106170 indicates 500 bp missing, corresponding to a 28 tandem repeat and a portion of AB037819.2, which contains the longest repeat length.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:09.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>17534392</start>
+        <stop>17700290</stop>
+        <quality>
+          <version_mapped acc="AL132765">38</version_mapped>
+          <version_mapped acc="AL132765">38</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>17553747</start>
+        <stop>17719645</stop>
+        <quality>
+          <version_mapped acc="AL132765">38</version_mapped>
+          <version_mapped acc="AL132765">38</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-1411</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>BX640513.2</accession1>
+    <accession2>AL450469.11</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>FIX patch for Chr.20 Gap Problem (right side)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is an assembly gap between between accessions BX640513.2 and AL450469.11. Gap extensions since GRCh37 are being considered for a patch release.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:44.000-0400</update>
+    <resolution>GRC-Duplicate</resolution>
+    <resolution_text>An extension from the right side of this gap was released as a FIX patch: GL582978.1. This patch provides additional sequence for the gap located between components BX640513.2 and AL450469.11 in reference chromosome NC_000020.10.</resolution_text>
+    <AltPatchType>GRCh37:FIX</AltPatchType>
+    <patchInfo gb_acc="GL582978.1" ref_acc="NW_003571062.1" region_name="REGION53"/>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh37.p3</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>61211869</start>
+        <stop>61267733</stop>
+        <quality>
+          <version_mapped acc="BX640513">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL582979.2" ref_acc="NW_003571063.2" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>156180</start>
+        <stop>179899</stop>
+        <quality>
+          <version_mapped acc="BX640513">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>62612662</start>
+        <stop>62636381</stop>
+        <quality>
+          <version_mapped acc="BX640513">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-144</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL512784.6</accession1>
+    <accession2>AL450465.12</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 22839 (DLGAP4), assembly gap</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap in build 36 between AL512784.6 and AL450465.12. nts 1-133 of NM_014902.3 are GC rich; BLAST with no filter indicates these align at 100% to AL512784.6 whereas the remainder of NM_014902.3 aligns to the components of NT_011362.9, of which AL450465.12 is the first one across the gap.</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:48.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The PCR product JN854134.1 was used to bridge the gap between FP565784.3 and FP565581.3.</resolution_text>
+    <AltPatchType>GRCh37:FIX</AltPatchType>
+    <patchInfo gb_acc="JH720448.1" ref_acc="NW_003871095.1" region_name="DLGAP4"/>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37.p9,GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>34883261</start>
+        <stop>34994224</stop>
+        <quality>
+          <version_mapped acc="AL512784">6</version_mapped>
+          <version_mapped acc="AL450465">12</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="JH720448.1" ref_acc="NW_003871095.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>1</start>
+        <stop>70483</stop>
+        <quality>
+          <version_mapped acc="AL512784">6</version_mapped>
+          <version_mapped acc="AL450465">12</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>36295339</start>
+        <stop>36365821</stop>
+        <quality>
+          <version_mapped acc="AL512784">6</version_mapped>
+          <version_mapped acc="AL450465">12</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-1493</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL358116.7</accession1>
+    <accession2>AL121762.13</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chromosome 20 assembly gap (AL358116.7 - AL121762.13)</summary>
+    <status>Continuing Investigation</status>
+    <status_text>New sequence has been added extending into this gap from AL358116.7, AUXG01000470.1, AUXG01000469.1, AUXG01000468.1, AUXG01000467.1, but a gap still remains</status_text>
+    <description>The GRCh37 component AL358116.7 is missing euchromatic sequence on the p-arm side of the centromere. Clones will be selected to extend from this component until centromeric repeats are identified.&#xa;&#xa;New sequence has been added extending into this gap from AL358116.7 &#xa;AL358116.7 &#xa;AUXG01000470.1&#xa;GAP&#xa;AUXG01000469.1&#xa;GAP&#xa;AUXG01000468.1&#xa;GAP&#xa;AUXG01000467.1</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:10.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>26233849</start>
+        <stop>29584090</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>26253213</start>
+        <stop>30349414</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-1495</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL358116.7</accession1>
+    <accession2>AL121762.13</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chromosome 20 assembly gap (AL358116.7 - AL121762.13)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>The GRCh37 component AL121762.13 is missing euchromatic sequence on the q-arm side of the centromere. Clones will be selected to extend from this component until centromeric repeats are identified. New sequence FP565326.9 has been added extending into this gap from AL121762.13</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2019-11-05T02:15:47.000-0500</update>
+    <resolution>GRC Resolved by Experimental Method</resolution>
+    <resolution_text>FP565326.9 contains ~70kb of centromeric repeat the gap between this clone and the centromere has been removed</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>26233849</start>
+        <stop>29584090</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>26253213</start>
+        <stop>30349414</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-1526</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL441988.11</accession1>
+    <accession2>FP565421.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chromosome 20 assembly gap (AL441988.11 - FP565421.3)</summary>
+    <status>Continuing Investigation</status>
+    <status_text>See HG-1573 for description of several sequences inserted into this gap for GRCh38. New gaps within this gap being dealt with in linked tickets HG-2305, HG-2306. This region of chromosome 20 is highly repetitive as it is near the centromeric region. Therefore difficult to correctly align new sequence here or resolve the current gaps.</status_text>
+    <description>Assembly gap between AL441988.11 (RP11-348I14) and FP565421.3 (ABC8-2141940I11)&#xa;&#xa;New sequence has been added extending into this gap for GRCh38   &#xa;&#xa;AL441988.11&#xa;ABBA01015426.1&#xa;GAP&#xa;AC018688.9&#xa;AC092107.5&#xa;GAP&#xa;AC104301.2&#xa;GAP&#xa;FO681521.2&#xa;GAP&#xa;AUXG01000201.1&#xa;GAP&#xa;AUXG01000202.1&#xa;FP565421.3</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:10.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37.p7</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>30349415</start>
+        <stop>31218078</stop>
+        <quality>
+          <version_mapped acc="AL441988">11</version_mapped>
+          <version_mapped acc="FP565421">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-1573</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL358116.7</accession1>
+    <accession2>AL121762.13</accession2>
+    <reportType>User Report</reportType>
+    <summary>Chr. 20 missing segmental duplication found on chr. 2</summary>
+    <status>Awaiting Elec Data</status>
+    <status_text>In GRCh38, the following components have been added to the distal peri-centromeric region of chr. 20 to provide representation for a segmental duplication associated with chr.2: AC018688.9 (RP11-462H3), AC092107.5 (RP11-755J8),  AC104301.2 (RP11-150N22). Another component associated with this duplication, AC011850.12 (RP11-364J18), has been placed within the centromere. We continue to review this region as the clone placements may require refinement.</status_text>
+    <description>GRCh37 chr. 20 is missing a copy of a segmental duplication also found on chr. 2.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:10.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>26233849</start>
+        <stop>29584090</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>26253213</start>
+        <stop>30349414</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-16</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL049541.24</accession1>
+    <accession2>AL049541.24</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Hsa20- unannotated problem region</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>ESP analysis suggests the reference chromosome contains a deletion within AL049541.24</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2019-11-05T01:24:28.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The unsure region of AL049541.24 has been improved and the updated accession for this clone is AL049541.25.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>47058889</start>
+        <stop>47188662</stop>
+        <quality>
+          <version_mapped acc="AL049541">24</version_mapped>
+          <version_mapped acc="AL049541">24</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>48430047</start>
+        <stop>48572124</stop>
+        <quality>
+          <version_mapped acc="AL049541">24</version_mapped>
+          <version_mapped acc="AL049541">24</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1685</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>FO393401.1</accession1>
+    <accession2>FO393401.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Clone Needs Renaming</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>In chromosome 20 accession FO393401 currently has the clone-name RP3-477O4, whereas it should have RP11-563A22.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:44.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>RP11-563A22 now has the correct accession, FO393401.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>33997304</start>
+        <stop>34182471</stop>
+        <quality>
+          <version_mapped acc="FO393401">1</version_mapped>
+          <version_mapped acc="FO393401">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>35409601</start>
+        <stop>35594549</stop>
+        <quality>
+          <version_mapped acc="FO393401">1</version_mapped>
+          <version_mapped acc="FO393401">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1872</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AC231535.2</accession1>
+    <accession2>AC231535.2</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC231535.2 contains sequence present in the 1kG ph1 decoy but absent from the Reference assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component AC231535.2 contains sequence present in the 1kG ph1 decoy but absent from the GRCh37.p10 assembly. BLASTing it reveals an alignment to AL109911.47 which is on chromosome 20. AC231535.2 contains sequence not present on the reference assembly and so will be added to an alternative haplotype tile path.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-10-01T15:06:05.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Non-component AC231535.2 contains sequence present in the 1kG ph1 decoy but absent from the GRCh37.p10 assembly. BLASTing it reveals an alignment to AL109911.47 which is on chromosome 20. AC231535.2 contains sequence not present on the reference assembly and so will be added to an alternative haplotype tile path.</resolution_text>
+    <AltPatchType>GRCh38:ALT</AltPatchType>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>60494897</start>
+        <stop>60539916</stop>
+        <quality>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>60494955</start>
+        <stop>60539916</stop>
+        <quality>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270869.1" ref_acc="NT_187623.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>33534</start>
+        <stop>75447</stop>
+        <quality>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>61919897</start>
+        <stop>61964860</stop>
+        <quality>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <version_mapped acc="AC231535">2</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1923</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AC226131.3</accession1>
+    <accession2>AC226131.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component (GRCh37.p10) HTG sequence AC226131.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component (GRCh37.p10) HTG sequence AC226131.3 contains sequence present in the 1kG ph1 decoy but absent from the Reference Assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-10-01T15:06:37.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>BLASTed AC226131.3 and it appears to be contained within AL121581.41. This has been added to the alternate tile path (ALT_1).</resolution_text>
+    <AltPatchType>GRCh38:ALT</AltPatchType>
+    <affectVersion>GRCh37.p10</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>62755738</start>
+        <stop>62789746</stop>
+        <quality>
+          <version_mapped acc="AC226131">3</version_mapped>
+          <version_mapped acc="AC226131">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270870.1" ref_acc="NT_187624.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>29331</start>
+        <stop>66984</stop>
+        <quality>
+          <version_mapped acc="AC226131">3</version_mapped>
+          <version_mapped acc="AC226131">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>64124385</start>
+        <stop>64158393</stop>
+        <quality>
+          <version_mapped acc="AC226131">3</version_mapped>
+          <version_mapped acc="AC226131">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-1943</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AC210433.3</accession1>
+    <accession2>AC210433.3</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Non-component AC210433.3 contains sequence present in the 1kG ph1 decoy but absent from the GRCh37.p10 assembly</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Non-component AC210433.3 contains sequence present in the 1kG ph1 decoy but absent from the GRCh37.p10 assembly</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-10-01T15:07:05.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Non-component AC210433.3 contains sequence present in the 1kG ph1 decoy but absent from the GRCh37.p10 assembly. This component has since been added to the alternate tile path so that the sequence is represented.</resolution_text>
+    <AltPatchType>GRCh38:ALT</AltPatchType>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>62062476</start>
+        <stop>62096968</stop>
+        <quality>
+          <version_mapped acc="AC210433">3</version_mapped>
+          <version_mapped acc="AC210433">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KI270871.1" ref_acc="NT_187625.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>16403</start>
+        <stop>53181</stop>
+        <quality>
+          <version_mapped acc="AC210433">3</version_mapped>
+          <version_mapped acc="AC210433">3</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>63431123</start>
+        <stop>63465615</stop>
+        <quality>
+          <version_mapped acc="AC210433">3</version_mapped>
+          <version_mapped acc="AC210433">3</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-2025</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>JN854134.1</accession1>
+    <accession2>JN854134.1</accession2>
+    <reportType>User Report</reportType>
+    <summary>User reported a gap in JN854134.1</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap  in PCR product JN854134.1; annotated as a feature on the sequence record.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2019-11-05T00:51:42.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Addition of whole genome sequence ADDF02012699.1 as a contained element within JN854134.1 to cover the regin containing N sequence</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="JH720448.1" ref_acc="NW_003871095.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>18352</start>
+        <stop>22030</stop>
+        <quality>
+          <version_mapped acc="JN854134">1</version_mapped>
+          <version_mapped acc="JN854134">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>36313690</start>
+        <stop>36317368</stop>
+        <quality>
+          <version_mapped acc="JN854134">1</version_mapped>
+          <version_mapped acc="JN854134">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-2076</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL121781.38</accession1>
+    <accession2>AL121781.38</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Possible misassembly or indel variation in GRCh38 within AL121781.38</summary>
+    <status>Awaiting Elec Data</status>
+    <status_text>Based on RP11 whole genome shotgun and optical map data this looks like a deletion in the clone AL121781.38</status_text>
+    <description>Analysis of GU267780.1 and GU266876.1 along with alignment of HuRef chr. 20, suggest there may be ~4,808 bp sequence missing from the reference assembly within component AL121781.38. This may represent variation or an assembly error.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:18:13.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>4418225</start>
+        <stop>4510287</stop>
+        <quality>
+          <version_mapped acc="AL121781">38</version_mapped>
+          <version_mapped acc="AL121781">38</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>4437578</start>
+        <stop>4529641</stop>
+        <quality>
+          <version_mapped acc="AL121781">38</version_mapped>
+          <version_mapped acc="AL121781">38</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Variation</type>
+    <key>HG-2224</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL035249.6</accession1>
+    <accession2>AL035249.6</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Possible misassembly or indel variation in GRCh38 within AL035249.6</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Analysis of GU269121.1 along with alignment of HuRef Chr. 20, suggest there may be ~2,846 bp sequence missing from the reference assembly within component AL035249.6. This may represent variation or an assembly error.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-08T11:56:54.000-0500</update>
+    <resolution>GRC Resolved- No Change</resolution>
+    <resolution_text>This variation is under 5 kb and does not meet the criteria for alternate locus representation.  The variation is ~2.8kb and is seen in ABBA01053888.1 and ABBA01053887.1 other assemblies and clone sequence match the reference sequence</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>5724631</start>
+        <stop>5822791</stop>
+        <quality>
+          <version_mapped acc="AL035249">6</version_mapped>
+          <version_mapped acc="AL035249">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>5743985</start>
+        <stop>5842145</stop>
+        <quality>
+          <version_mapped acc="AL035249">6</version_mapped>
+          <version_mapped acc="AL035249">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-2225</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL117333.26</accession1>
+    <accession2>AL117333.26</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Possible misassembly or indel variation in GRCh38 within AL117333.26</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Analysis of GU268429.1 along with alignment of HuRef Chr. 20, suggest there may be ~5,052 bp sequence missing from the reference assembly within component AL117333.26. This may represent variation or an assembly error.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2024-04-12T13:57:03.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>A TPF with AC217326.3 has been uploaded to both the Chr. 20 Primary TPF and the Chr. 20 PATCHES TPF. This corrects an approximately 5kb deletion found in GRCh38 chr 20 component AL117333.26.</resolution_text>
+    <AltPatchType>GRCh38:FIX</AltPatchType>
+    <patchInfo gb_acc="MU273388.1" ref_acc="NW_025791811.1" region_name="REGION334"/>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39,GRCh38.p14</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>13884050</start>
+        <stop>14040762</stop>
+        <quality>
+          <version_mapped acc="AL117333">26</version_mapped>
+          <version_mapped acc="AL117333">26</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>13903404</start>
+        <stop>14060116</stop>
+        <quality>
+          <version_mapped acc="AL117333">26</version_mapped>
+          <version_mapped acc="AL117333">26</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="MU273388.1" ref_acc="NW_025791811.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>111955</start>
+        <stop>273725</stop>
+        <quality>
+          <version_mapped acc="AL117333">26</version_mapped>
+          <version_mapped acc="AL117333">26</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-2226</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL034419.22</accession1>
+    <accession2>AL034419.22</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Possible misassembly or indel variation in GRCh38 within AL034419.22</summary>
+    <status>Under Review</status>
+    <status_text>Based on optical mapping and RP11 whole genome shotgun this could be a clone problem</status_text>
+    <description>Analysis of GU267691.1 along with alignment of HuRef Chr. 20, suggest there may be ~1,777 bp sequence missing from the reference assembly within component AL034419.22. This may represent variation or an assembly error.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:18:17.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>42640075</start>
+        <stop>42792182</stop>
+        <quality>
+          <version_mapped acc="AL034419">22</version_mapped>
+          <version_mapped acc="AL034419">22</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>44011435</start>
+        <stop>44163542</stop>
+        <quality>
+          <version_mapped acc="AL034419">22</version_mapped>
+          <version_mapped acc="AL034419">22</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-2305</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AC092107.5</accession1>
+    <accession2>AC104301.2</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>There is a gap in chromosome 20 between components AC092107.5 and AC104301.2</summary>
+    <status>Continuing Investigation</status>
+    <status_text>This region of chromosome 20 is highly repetitive as it is near the centromeric region. Therefore difficult to correctly align new sequence here or resolve the current gaps.</status_text>
+    <description>There is a gap in chromosome 20 between components AC092107.5 and AC104301.2</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:09.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>30626282</start>
+        <stop>31001508</stop>
+        <quality>
+          <version_mapped acc="AC092107">5</version_mapped>
+          <version_mapped acc="AC104301">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-2306</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AC104301.2</accession1>
+    <accession2>FO681521.2</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>There is a gap in chromosome 20 between components AC104301.2 and FO681521.2</summary>
+    <status>Continuing Investigation</status>
+    <status_text>This region of chromosome 20 is highly repetitive as it is near the centromeric region. Therefore difficult to correctly align new sequence here or resolve the current gaps.</status_text>
+    <description>There is a gap in chromosome 20 between components AC104301.2 and FO681521.2</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:10.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>30811899</start>
+        <stop>31107036</stop>
+        <quality>
+          <version_mapped acc="AC104301">2</version_mapped>
+          <version_mapped acc="FO681521">2</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-2316</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL049541.25</accession1>
+    <accession2>AL049541.25</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Assembly component AL049541.25 has had an accession.version update</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Assembly component AL049541.25 has had an accession.version update. GRC curator review needed to ensure proper representation in future assembly versions.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2019-11-05T10:08:20.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The accession version update has no effect on the alignments</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>47058789</start>
+        <stop>47188662</stop>
+        <quality>
+          <version_mapped acc="AL049541">25</version_mapped>
+          <version_mapped acc="AL049541">25</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>48430147</start>
+        <stop>48572124</stop>
+        <quality>
+          <version_mapped acc="AL049541">25</version_mapped>
+          <version_mapped acc="AL049541">25</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Missing sequence</type>
+    <key>HG-2399</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL354836.13</accession1>
+    <accession2>AL354836.13</accession2>
+    <reportType>User Report</reportType>
+    <summary>AL354836.13 p may be missing ~5kb within LAMA5 on chromosome 20</summary>
+    <status>Under Review</status>
+    <status_text>clone AC216798.4 covers this region and seems to have more sequence in a repeat, but In this case it&apos;s not greater than 5kb</status_text>
+    <description>AL354836.13 p may be missing ~5kb within LAMA5 on chromosome 20 in the region :62302008-62329935 identified by optical map analysis or this could be variation</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:09.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>60810732</start>
+        <stop>60951687</stop>
+        <quality>
+          <version_mapped acc="AL354836">13</version_mapped>
+          <version_mapped acc="AL354836">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>62235676</start>
+        <stop>62376631</stop>
+        <quality>
+          <version_mapped acc="AL354836">13</version_mapped>
+          <version_mapped acc="AL354836">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Variation</type>
+    <key>HG-2447</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL049649.7</accession1>
+    <accession2>AL049649.7</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Possible misassembly or indel variation in GRCh38 within AL049649.7</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Analysis of AC205876.2 and GU267184.1, GU267815.1, and GU267094.1 along with alignment of CHM1 (GCA_001297185.1), suggest there may be about 4,816 bp sequence missing from the reference assembly within component. Analysis of GRCh38-HuRef assembly-assembly alignments indicates that HuRef supports the reference suggesting that the indel is sequence variation.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>GRC Decision</external_info_type>
+    <update>2018-01-18T07:39:50.000-0500</update>
+    <resolution>GRC Resolved- No Change</resolution>
+    <resolution_text>WGS components LAZQ01012849.1 (GCA_001013985.1),  LRUL01020420.1 (GCA_001549605.1), LRIL01009003.1 (GCA_001542345.1), LRUM01014276.1 (GCA_001549595.1), ADDF02118867.1 (GCA_000004845.2), ABBA01053944.1 (GCA_000002125.2) agree with reference component AL049649.7 suggesting this is a valid deletion allele. This variation is under 5 kb and does not meet the criteria for alternate locus representation.</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>11179047</start>
+        <stop>11314582</stop>
+        <quality>
+          <version_mapped acc="AL049649">7</version_mapped>
+          <version_mapped acc="AL049649">7</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>11198399</start>
+        <stop>11333934</stop>
+        <quality>
+          <version_mapped acc="AL049649">7</version_mapped>
+          <version_mapped acc="AL049649">7</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-2530</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL109806.22</accession1>
+    <accession2>AL109806.22</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 140687 (GCNT7), poor quality (includes component misassembly)</summary>
+    <status>Open</status>
+    <status_text>none</status_text>
+    <description>In progress</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2023-10-09T08:46:32.000-0400</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh38</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>55038744</start>
+        <stop>55132764</stop>
+        <quality>
+          <version_mapped acc="AL109806">22</version_mapped>
+          <version_mapped acc="AL109806">22</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>56463688</start>
+        <stop>56557708</stop>
+        <quality>
+          <version_mapped acc="AL109806">22</version_mapped>
+          <version_mapped acc="AL109806">22</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-370</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL109955.37</accession1>
+    <accession2>AL109955.37</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 55544 (RBM38), poor quality (includes component misassembly)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a possible functional difference between the proteins encoded by RefSeq NM_017495.4 (RBM38) and the genomic region to which it aligns.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>1000 Genomes</external_info_type>
+    <update>2016-10-12T09:50:04.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The assembly component in question, AL109955 had an accession version update from Build 36 to GRCh37 (AL109955.37 to AL109955.38). This resolved the 1 nucleotide deletion which affected the protein translation, as mentioned in this issue&apos;s description. The mismatches between the GRCh37 and the RefSeq data in the 5&apos;UTR of gene RBM38 were investigated by looking at the sequence traces, and the data supported the reference genome.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>55934044</start>
+        <stop>56042501</stop>
+        <quality>
+          <version_mapped acc="AL109955">37</version_mapped>
+          <version_mapped acc="AL109955">37</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>57358988</start>
+        <stop>57467445</stop>
+        <quality>
+          <version_mapped acc="AL109955">37</version_mapped>
+          <version_mapped acc="AL109955">37</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-373</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL110120.11</accession1>
+    <accession2>AL110120.11</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 55857 (C20orf19), poor quality (includes component misassembly)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a possible functional difference between the proteins encoded by RefSeq NM_018474.3 (C20orf19) and the genomic region to which it aligns.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>SAB Decision</external_info_type>
+    <update>2016-10-12T09:49:55.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Minicontig KF459716.1 has been generated and added to the Chr. 20 Reference to update the base to the more common allele to improve representation of GeneID: 55857 (C20orf19) in GRCh38.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>21164662</start>
+        <stop>21200115</stop>
+        <quality>
+          <version_mapped acc="AL110120">11</version_mapped>
+          <version_mapped acc="AL110120">11</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>21184022</start>
+        <stop>21219477</stop>
+        <quality>
+          <version_mapped acc="AL110120">11</version_mapped>
+          <version_mapped acc="AL110120">11</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-377</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL121827.33</accession1>
+    <accession2>AL121827.33</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 57642 (COL20A1), poor quality (includes component misassembly)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a possible functional difference between the proteins encoded by RefSeq NM_020882.2 (COL20A1) and the genomic region to which it aligns.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2010-03-12T09:06:00.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Sequence change from Build 36 to GRCh37. AL121827.33 was replaced with AL121827.34, removing the deletion that caused the frameshift</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>61861851</start>
+        <stop>62046073</stop>
+        <quality>
+          <version_mapped acc="AL121827">33</version_mapped>
+          <version_mapped acc="AL121827">33</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>63230499</start>
+        <stop>63414720</stop>
+        <quality>
+          <version_mapped acc="AL121827">33</version_mapped>
+          <version_mapped acc="AL121827">33</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-387</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL139349.36</accession1>
+    <accession2>AL139349.36</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 79716 (NPEPL1), poor quality (includes component misassembly)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a possible functional difference between the proteins encoded by RefSeq NM_024663.3 (NPEPL1) and the genomic region to which it aligns.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2010-03-12T09:00:06.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Sequence change from Build 36 to GRCh37. AL139349.36 was replaced with AL139349.37, removing the insertion that caused the frameshift</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>57239782</start>
+        <stop>57308535</stop>
+        <quality>
+          <version_mapped acc="AL139349">36</version_mapped>
+          <version_mapped acc="AL139349">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>58664726</start>
+        <stop>58733479</stop>
+        <quality>
+          <version_mapped acc="AL139349">36</version_mapped>
+          <version_mapped acc="AL139349">36</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-398</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL034548.25</accession1>
+    <accession2>AL034548.25</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 85364 (ZCCHC3), poor quality (includes component misassembly)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a sequence discrepancy between RefSeq NM_033089.6 (ZCCHC3) and the reference genomic sequence to which it aligns.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>SAB Decision</external_info_type>
+    <update>2016-10-12T09:49:32.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>Minicontig KF495703.1 has been generated and added to the Chr. 20 Reference to update the base to the more common allele to improve representation of GeneID: 85364 (ZCCHC3) in GRCh38.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>226067</start>
+        <stop>379136</stop>
+        <quality>
+          <version_mapped acc="AL034548">25</version_mapped>
+          <version_mapped acc="AL034548">25</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>245426</start>
+        <stop>398492</stop>
+        <quality>
+          <version_mapped acc="AL034548">25</version_mapped>
+          <version_mapped acc="AL034548">25</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Clone Problem</type>
+    <key>HG-410</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL031659.9</accession1>
+    <accession2>AL031659.9</accession2>
+    <reportType>RefSeq Report</reportType>
+    <summary>GeneID: 140699 (C20orf132), poor quality (includes component misassembly)</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a sequence discrepancy between RefSeq NM_152503.4 (C20orf132) and the reference genome sequence to which it aligns.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>SAB Decision</external_info_type>
+    <update>2024-04-12T13:57:03.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>ABBA01006615.1 has been added to the Chr. 20 Primary TPF and the Chr. 20 PATCHES TPF. This scaffold provides sequence for a 30 nt deletion in GRCh38 component AL031659.9, improving the alignment of MROH8 (GeneID: 140699) to the reference assembly.</resolution_text>
+    <AltPatchType>GRCh38:FIX</AltPatchType>
+    <patchInfo gb_acc="MU273389.1" ref_acc="NW_025791812.1" region_name="MROH8"/>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh39,GRCh38.p14</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>35788244</start>
+        <stop>35889141</stop>
+        <quality>
+          <version_mapped acc="AL031659">9</version_mapped>
+          <version_mapped acc="AL031659">9</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>37159841</start>
+        <stop>37260738</stop>
+        <quality>
+          <version_mapped acc="AL031659">9</version_mapped>
+          <version_mapped acc="AL031659">9</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="MU273389.1" ref_acc="NW_025791812.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>69314</start>
+        <stop>170240</stop>
+        <quality>
+          <version_mapped acc="AL031659">9</version_mapped>
+          <version_mapped acc="AL031659">9</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-503</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL645732.1</accession1>
+    <accession2>AL645732.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chromosome 20 assembly gap (AL645732.1 - AL645732.1)</summary>
+    <status>Continuing Investigation</status>
+    <status_text>FO704554.1 has completed sequence and has not reached the telomere furhter sequence will be required here</status_text>
+    <description>The GRCh37 component AL645732.1 is missing euchromatic sequence leading into the telomere. Clones will be selected to extend from this component until telomeric repeats are identified.&#xa;&#xa;New sequence has been added extending into this gap for GRCh38 from AL645732.1 &#xa;AL645732.1&#xa;FO704554.1, &#xa;ABBA01053738.1&#xa;GAP&#xa;AEKP01151425.1&#xa;GAP&#xa;AEKP01151426.1&#xa;GAP</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-11-19T11:17:06.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>60001</start>
+        <stop>63943</stop>
+        <quality>
+          <version_mapped acc="AL645732">1</version_mapped>
+          <version_mapped acc="AL645732">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>81360</start>
+        <stop>83302</stop>
+        <quality>
+          <version_mapped acc="AL645732">1</version_mapped>
+          <version_mapped acc="AL645732">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-504</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL358116.7</accession1>
+    <accession2>AL121762.13</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chr.20 Gap Problem</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap in the assembly between components AL358116.7 and AL121762.13.</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:46.000-0400</update>
+    <resolution>GRC-Gap Update</resolution>
+    <resolution_text>The flanking accessions of this region have changed. This issue will be resolved and new tickets opened to deal with the gaps in this region.</resolution_text>
+    <affectVersion>na</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>26233849</start>
+        <stop>29584090</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>26253213</start>
+        <stop>30349414</stop>
+        <quality>
+          <version_mapped acc="AL358116">7</version_mapped>
+          <version_mapped acc="AL121762">13</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-505</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL441988.11</accession1>
+    <accession2>AL121723.36</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chr.20 Gap Problem</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap in the assembly between components AL441988.11 and AL121723.36.</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:46.000-0400</update>
+    <resolution>GRC-Gap Update</resolution>
+    <resolution_text>The accessions for this ticket have changed. It will now be tracked in ticket HG-1526.</resolution_text>
+    <affectVersion>na</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>29584091</start>
+        <stop>29874360</stop>
+        <quality>
+          <version_mapped acc="AL441988">11</version_mapped>
+          <version_mapped acc="AL121723">36</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>30349415</start>
+        <stop>31286557</stop>
+        <quality>
+          <version_mapped acc="AL441988">11</version_mapped>
+          <version_mapped acc="AL121723">36</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-506</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL499627.23</accession1>
+    <accession2>AL449263.6</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chr.20 Gap Problem</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap in the assembly between components AL499627.23 and AL449263.6.</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-10-01T15:09:44.000-0400</update>
+    <resolution>GRC Resolved by Experimental Method</resolution>
+    <resolution_text>The gap between AL499627.23 and AL449263.6 has been closed by the incorporation of AC161429 into the TPF. This patch closes the gap located between components AL499627.23 and AL449263.6 in reference chromosome NC_000020.10.</resolution_text>
+    <AltPatchType>GRCh37:FIX</AltPatchType>
+    <patchInfo gb_acc="GL582979.2" ref_acc="NW_003571063.2" region_name="REGION53"/>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh37.p3,GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>61031539</start>
+        <stop>61170882</stop>
+        <quality>
+          <version_mapped acc="AL499627">23</version_mapped>
+          <version_mapped acc="AL449263">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL582979.2" ref_acc="NW_003571063.2" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>1</start>
+        <stop>117193</stop>
+        <quality>
+          <version_mapped acc="AL499627">23</version_mapped>
+          <version_mapped acc="AL449263">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>62456483</start>
+        <stop>62573675</stop>
+        <quality>
+          <version_mapped acc="AL499627">23</version_mapped>
+          <version_mapped acc="AL449263">6</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-507</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>BX640514.2</accession1>
+    <accession2>AL450469.11</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chr.20 Gap Problem</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>There is a gap in the assembly between components BX640514.2 and AL450469.11</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-01-04T12:52:45.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>The PCR product JN854136.1 was used to bridge the gap between AC174062.1 and FP565323.3.</resolution_text>
+    <AltPatchType>GRCh37:FIX</AltPatchType>
+    <patchInfo gb_acc="GL582979.2" ref_acc="NW_003571063.2" region_name="REGION53"/>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh37.p9,GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>61170883</start>
+        <stop>61267733</stop>
+        <quality>
+          <version_mapped acc="BX640514">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL582979.2" ref_acc="NW_003571063.2" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>117194</start>
+        <stop>179899</stop>
+        <quality>
+          <version_mapped acc="BX640514">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>62573676</start>
+        <stop>62636381</stop>
+        <quality>
+          <version_mapped acc="BX640514">2</version_mapped>
+          <version_mapped acc="AL450469">11</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Gap</type>
+    <key>HG-508</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL137028.9</accession1>
+    <accession2>AL137028.9</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Chromosome 20 assembly gap (AL137028.9 - AL137028.9)</summary>
+    <status>Continuing Investigation</status>
+    <status_text>Further work is required to locate sequence that extends toward the telomere as previous attempts at clone sequencing have failed to result in an extension in this region</status_text>
+    <description>The GRCh37 component AL137028.9 is missing euchromatic sequence leading into the telomere. Clones will be selected to extend from this component until telomeric repeats are identified.</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2018-01-18T07:53:08.000-0500</update>
+    <resolution>Unresolved</resolution>
+    <resolution_text>na</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>na</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>62906196</start>
+        <stop>62965520</stop>
+        <quality>
+          <version_mapped acc="AL137028">9</version_mapped>
+          <version_mapped acc="AL137028">9</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>64274843</start>
+        <stop>64334167</stop>
+        <quality>
+          <version_mapped acc="AL137028">9</version_mapped>
+          <version_mapped acc="AL137028">9</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Localization Problem</type>
+    <key>HG-662</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL837517.14</accession1>
+    <accession2>AL837517.14</accession2>
+    <reportType>Genomic Alignment- single clone</reportType>
+    <summary>Should unplaced contig NT_113914 be retained in the assembly?</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Determine evidence for keeping NT_113914 as an unplaced contig in the assembly.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2017-10-06T04:09:26.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>This clone has been localised based on admixture mapping and is located now in the centromeric region of chromosome 20.</resolution_text>
+    <affectVersion>Build 36</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="GL000198.1" ref_acc="NT_113914.1" type="UNLOC_SCAFFOLD">9</mapSequence>
+        <start>1</start>
+        <stop>90085</stop>
+        <quality>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>28958247</start>
+        <stop>29048331</stop>
+        <quality>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <version_mapped acc="AL837517">14</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Variation</type>
+    <key>HG-8</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL049634.8</accession1>
+    <accession2>AL138804.16</accession2>
+    <reportType>End Sequence Profile</reportType>
+    <summary>Hsa20- SIRPB1 problem region</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>ESP analysis suggests the reference chromosome contains an insertion between AL049634.8 and AL138804.16</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-10-12T12:18:09.000-0400</update>
+    <resolution>GRC Resolved- No Change</resolution>
+    <resolution_text>Optical mapping shows that this region of the genome exhibits variation,there is no problem with the current representation of this region</resolution_text>
+    <affectVersion>na</affectVersion>
+    <fixVersion>GRCh39</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>1476885</start>
+        <stop>1632306</stop>
+        <quality>
+          <version_mapped acc="AL049634">8</version_mapped>
+          <version_mapped acc="AL138804">16</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>1496239</start>
+        <stop>1651660</stop>
+        <quality>
+          <version_mapped acc="AL049634">8</version_mapped>
+          <version_mapped acc="AL138804">16</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-844</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>CR383701.1</accession1>
+    <accession2>CR383702.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Split finish clone RP11-503P21 to be removed from the TPF</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Split finish clone RP11-503P21 to be removed from the TPF</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2014-06-11T09:07:52.000-0400</update>
+    <resolution>GRC Resolved by Experimental Method</resolution>
+    <resolution_text>In order to remove split finish clone RP11-503P21 from the TPF, CR383702.1 (RP11-503P21_B) was removed and replaced with fosmid WI2-3344O2.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>31205412</start>
+        <stop>31327997</stop>
+        <quality>
+          <version_mapped acc="CR383701">1</version_mapped>
+          <version_mapped acc="CR383702">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>32617510</start>
+        <stop>32740193</stop>
+        <quality>
+          <version_mapped acc="CR383701">1</version_mapped>
+          <version_mapped acc="CR383702">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-850</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL390211.1</accession1>
+    <accession2>AL390212.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Split finish clone RP1-29M10 to be removed from TPF</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Split finish clone RP1-29M10 to be removed from TPF</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2016-10-12T13:50:06.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AL022342 inserted into TPF in place of AL390211, AL049540, AL390212</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>45754032</start>
+        <stop>45881673</stop>
+        <quality>
+          <version_mapped acc="AL390211">1</version_mapped>
+          <version_mapped acc="AL390212">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>47125293</start>
+        <stop>47252929</stop>
+        <quality>
+          <version_mapped acc="AL390211">1</version_mapped>
+          <version_mapped acc="AL390212">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-851</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL391692.1</accession1>
+    <accession2>AL391693.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Split finish clone RP13-218F6 to be removed from TPF</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Split finish clone RP13-218F6 to be removed from TPF</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2012-10-25T09:18:29.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>AL391095 inserted into TPF in place of AL391692, AL080249, AL391693</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>36959382</start>
+        <stop>37072430</stop>
+        <quality>
+          <version_mapped acc="AL391692">1</version_mapped>
+          <version_mapped acc="AL391693">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>38330880</start>
+        <stop>38443787</stop>
+        <quality>
+          <version_mapped acc="AL391692">1</version_mapped>
+          <version_mapped acc="AL391693">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>GRC Housekeeping</type>
+    <key>HG-874</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL389874.1</accession1>
+    <accession2>AL389875.1</accession2>
+    <reportType>TPF Analysis</reportType>
+    <summary>Split finish clone RP11-563A22 to be removed from TPF</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Split finish clone RP11-563A22 to be removed from TPF</description>
+    <experiment_type>Clone Sequencing</experiment_type>
+    <external_info_type>na</external_info_type>
+    <update>2015-07-23T17:18:48.000-0400</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>RP11-563A22 (FO393401.1) inserted in place of the three components. RP11-563A22 is now represented correctly in the TPF.</resolution_text>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>33997404</start>
+        <stop>34182471</stop>
+        <quality>
+          <version_mapped acc="AL389874">1</version_mapped>
+          <version_mapped acc="AL389875">1</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>35409501</start>
+        <stop>35594549</stop>
+        <quality>
+          <version_mapped acc="AL389874">1</version_mapped>
+          <version_mapped acc="AL389875">1</version_mapped>
+          <method_acc1>alignment</method_acc1>
+          <method_acc2>alignment</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+  <issue>
+    <type>Variation</type>
+    <key>HG-944</key>
+    <assignedChr>chr20</assignedChr>
+    <accession1>AL160413.7</accession1>
+    <accession2>AL160413.7</accession2>
+    <reportType>Genomic Alignment- assembly</reportType>
+    <summary>Missing sequence from clone RP5-837G17?</summary>
+    <status>Resolved</status>
+    <status_text>none</status_text>
+    <description>Alignment to HuRef suggests that AL160413.7 (RP5-837G17) may be missing ~40 kb of sequence.</description>
+    <experiment_type>na</experiment_type>
+    <external_info_type>SAB Decision</external_info_type>
+    <update>2015-12-15T10:34:05.000-0500</update>
+    <resolution>GRC Resolved by Electronic Means</resolution>
+    <resolution_text>No evidence of misassembly. No optical map data to support an alternate haplotype within the insertion. However since the insertion conatins decoy sequence ABC8-714822F8 (AC232301.2) and ABC7-42749900J23 (AC232307.2) were added to the TPF (contained within AL160413.7) as an fix patch.</resolution_text>
+    <AltPatchType>GRCh37:FIX</AltPatchType>
+    <patchInfo gb_acc="KB663608.1" ref_acc="NW_004504304.1" region_name="REGION101"/>
+    <affectVersion>GRCh37</affectVersion>
+    <fixVersion>GRCh37.p12,GRCh38</fixVersion>
+    <location>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.1" ref_acc="NC_000020.10" type="CHROMOSOME">20</mapSequence>
+        <start>54104552</start>
+        <stop>54161252</stop>
+        <quality>
+          <version_mapped acc="AL160413">7</version_mapped>
+          <version_mapped acc="AL160413">7</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh37.p13" gb_asm_acc="GCA_000001405.14" ref_asm_acc="GCF_000001405.25" asm_status="old">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="KB663608.1" ref_acc="NW_004504304.1" type="ALT_SCAFFOLD">20</mapSequence>
+        <start>125946</start>
+        <stop>224126</stop>
+        <quality>
+          <version_mapped acc="AL160413">7</version_mapped>
+          <version_mapped acc="AL160413">7</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+      <position name="GRCh38.p14" gb_asm_acc="GCA_000001405.29" ref_asm_acc="GCF_000001405.40" asm_status="latest">
+        <mapStatus>MAPPED</mapStatus>
+        <mapSequence gb_acc="CM000682.2" ref_acc="NC_000020.11" type="CHROMOSOME">20</mapSequence>
+        <start>55488014</start>
+        <stop>55586194</stop>
+        <quality>
+          <version_mapped acc="AL160413">7</version_mapped>
+          <version_mapped acc="AL160413">7</version_mapped>
+          <method_acc1>component</method_acc1>
+          <method_acc2>component</method_acc2>
+        </quality>
+      </position>
+    </location>
+  </issue>
+</GenomeIssues>
