@@ -43,7 +43,9 @@ jobs:
 
       - name: Print snapshot date
         run: |
-          echo "SNAPSHOT_DATE=$(make --no-print-directory print_snapshot_date)"
+          SNAPSHOT_DATE="$(make --no-print-directory print_snapshot_date)"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE" >> "$GITHUB_ENV"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE"
 
       - name: Run script
         run: |
@@ -53,7 +55,11 @@ jobs:
         run: |
           uv run python -c 'from grc_fixes_monitor.grc_fixes import GRCFixMonitor; print(f"- URL: {GRCFixMonitor.BASE_URL}")' > /tmp/body.txt
           awk 'END { print "- No. of entries: " NR-1 }' output/grc_fixes.tsv >> /tmp/body.txt
-          echo "Snapshot date: $(make --no-print-directory print_snapshot_date)" >> /tmp/body.txt
+          echo "Snapshot date: ${SNAPSHOT_DATE}" >> /tmp/body.txt
+
+      - name: Package data snapshot
+        run: |
+          zip -rq "data_${SNAPSHOT_DATE}.zip" data
       
       - name: Create version
         id: create_version
@@ -69,5 +75,6 @@ jobs:
           tag_name: ${{ steps.create_version.outputs.tag }}
           files: |
             output/grc_fixes.tsv
+            data_${{ env.SNAPSHOT_DATE }}.zip
           generate_release_notes: true
           token: ${{ github.token }}
