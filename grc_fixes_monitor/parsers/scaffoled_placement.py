@@ -4,7 +4,6 @@ import logging
 from pathlib import Path
 from dataclasses import dataclass
 import re
-from unittest import result
 
 logger = logging.getLogger(__name__)
 
@@ -51,17 +50,21 @@ class ScaffoldPlacementParser:
 
     def __init__(self, placements: list[ScaffoldPlacement]):
         self._placements = placements
+        logger.debug("Initialised ScaffoldPlacementParser with %d placements", len(placements))
 
     @classmethod
     def from_file(cls, placement_file: Path) -> ScaffoldPlacementParser:
-        return cls(cls._parse(placement_file))
+        logger.info("Parsing scaffold placement file: %s", placement_file)
+        placements = cls._parse(placement_file)
+        logger.info("Parsed %d scaffold placement records from %s", len(placements), placement_file)
+        return cls(placements)
     
     @staticmethod
     def _parse(placement_file: Path) -> list[ScaffoldPlacement]:
         try:
-            with placement_file.open() as f:
+            with placement_file.open(encoding="utf-8") as f:
                 reader = csv.DictReader(f, delimiter='\t')
-                return [
+                placements = [
                     ScaffoldPlacement(
                         alt_asm_name=row[ScaffoldPlacementParser._ALT_ASM_NAME_COL],
                         prim_asm_name=row[ScaffoldPlacementParser._PRIM_ASM_NAME_COL],
@@ -81,9 +84,13 @@ class ScaffoldPlacementParser:
                     )
                     for row in reader
                 ]
+                logger.debug("Read %d rows from scaffold placement file %s", len(placements), placement_file)
+                return placements
         except KeyError as e:
+            logger.error("Scaffold placement file %s is missing expected column %s", placement_file, e)
             raise ValueError(f"Missing expected column in scaffold placement file: {e}") from e
         except FileNotFoundError:
+            logger.error("Scaffold placement file not found: %s", placement_file)
             raise FileNotFoundError(f"Scaffold placement file not found: {placement_file}")
         
     @property
@@ -91,7 +98,9 @@ class ScaffoldPlacementParser:
         return self._placements
     
 def _extract_keys(alt_scaf_name: str) -> list[str]:
-    return [f"HG-{m}" for m in _HG_PATTERN.findall(alt_scaf_name)]
+    keys = [f"HG-{m}" for m in _HG_PATTERN.findall(alt_scaf_name)]
+    logger.debug("Extracted %d issue key(s) from scaffold name %s: %s", len(keys), alt_scaf_name, keys)
+    return keys
 
 
 def to_per_issue_scaffold_placements(placements: list[ScaffoldPlacement]) -> dict[str, ScaffoldPlacement]:
@@ -102,11 +111,27 @@ def to_per_issue_scaffold_placements(placements: list[ScaffoldPlacement]) -> dic
     e.g. HG2231_HG2496_PATCH produces two entries with keys HG-2231 and HG-2496,
     both referencing the same ScaffoldPlacement.
     """
+    logger.info("Expanding %d scaffold placements into per-issue mapping", len(placements))
     result = {}
+    overwritten_count = 0
 
     for placement in placements:
         keys = _extract_keys(placement.alt_scaf_name)
+        if not keys:
+            logger.debug("No HG issue keys found in scaffold name %s", placement.alt_scaf_name)
         for key in keys:
+            if key in result:
+                overwritten_count += 1
+                logger.debug(
+                    "Overwriting existing mapping for issue %s with scaffold %s",
+                    key,
+                    placement.alt_scaf_name,
+                )
             result[key] = placement
 
+    logger.info(
+        "Created per-issue mapping with %d unique issue keys (%d overwritten mappings)",
+        len(result),
+        overwritten_count,
+    )
     return result

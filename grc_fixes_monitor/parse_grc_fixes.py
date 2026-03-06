@@ -39,26 +39,36 @@ class OutputRecord:
     alt_scaf_stop: int
 
 def check_data_files(data_folder: Path):
-    if not any(data_folder.glob('chr*.xml')):
-        logging.error(f"No chr*.xml files found in {data_folder}. Please ensure the data files are present.")
-            
+    logger.info("Checking required data files in %s", data_folder)
+    chr_issue_files = sorted(data_folder.glob("chr*.xml"))
+    if not chr_issue_files:
+        logger.error("No chr*.xml files found in %s. Please ensure the data files are present.", data_folder)
+    else:
+        logger.info("Found %d chr*.xml files", len(chr_issue_files))
+        logger.debug("chr*.xml files: %s", [p.name for p in chr_issue_files])
 
-    if not (data_folder / 'alt_scaffold_placement.txt').exists():
-        logging.error(f"alt_scaffold_placement.txt not found in {data_folder}. Please ensure the data files are present.")
+    alt_scaffold_file = data_folder / "alt_scaffold_placement.txt"
+    if not alt_scaffold_file.exists():
+        logger.error("alt_scaffold_placement.txt not found in %s. Please ensure the data files are present.", data_folder)
         raise FileNotFoundError(f"alt_scaffold_placement.txt not found in {data_folder}")
+    logger.debug("Found required file: %s", alt_scaffold_file)
 
-    if not (data_folder / 'patch_type').exists():
-        logging.error(f"patch_type not found in {data_folder}. Please ensure the data files are present.")
+    patch_type_file = data_folder / "patch_type"
+    if not patch_type_file.exists():
+        logger.error("patch_type not found in %s. Please ensure the data files are present.", data_folder)
         raise FileNotFoundError(f"patch_type not found in {data_folder}")
+    logger.debug("Found required file: %s", patch_type_file)
 
 def write_output(records: list[OutputRecord], output_file: Path) -> None:
     header = [field.name for field in fields(OutputRecord)]
+    logger.info("Writing %d records to %s", len(records), output_file)
+    logger.debug("Output header has %d columns: %s", len(header), header)
     with open(output_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f, delimiter="\t")
         writer.writerow(header)
         for record in records:
             writer.writerow([getattr(record, field) for field in header])
-    logger.info(f"Wrote {len(records)} records to {output_file}")
+    logger.info("Wrote %d records to %s", len(records), output_file)
 
 def main() -> None:
     arg_parser = argparse.ArgumentParser(
@@ -102,6 +112,7 @@ Examples:
     fix_patch_names = {patch.alt_scaf_name for patch in fix_patches}
     fix_scaffold_placements = [p for p in scaffold_placements if p.alt_scaf_name in fix_patch_names]
     logger.info(f"Found {len(fix_scaffold_placements)} FIX scaffold placements")
+    logger.debug("Unique FIX patch names considered: %d", len(fix_patch_names))
 
     per_issue_scaffold_placements = to_per_issue_scaffold_placements(fix_scaffold_placements)
     logger.debug(f"Expanded {len(fix_scaffold_placements)} to {len(per_issue_scaffold_placements)} per-issue scaffold placements")
@@ -111,13 +122,14 @@ Examples:
     logger.info(f"Parsed {len(grc_issues_parser)} GRC issues")
 
     final_records = []
+    logger.info("Joining per-issue scaffold placements with GRC issue details")
 
     for issue_id, scaffold_placement in per_issue_scaffold_placements.items():
         issue_details = grc_issues_parser.get(issue_id)
         
         if not issue_details:
             logger.error(f"No GRC issue found for key {issue_id} (scaffold {scaffold_placement.alt_scaf_name})")
-            sys.exit(1)
+            raise ValueError(f"No GRC issue found for key {issue_id} (scaffold {scaffold_placement.alt_scaf_name})")
 
         record = OutputRecord(
             issue_id=issue_details.key,
@@ -145,6 +157,7 @@ Examples:
             alt_scaf_stop=scaffold_placement.alt_scaf_stop
         )
         final_records.append(record)
+        logger.debug("Built output record for issue %s and scaffold %s", issue_id, scaffold_placement.alt_scaf_name)
 
     logger.info(f"Generated {len(final_records)} output records")
     write_output(final_records, args.output_file)
