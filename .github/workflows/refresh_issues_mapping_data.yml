@@ -1,0 +1,47 @@
+name: refresh_issues_mapping_data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-issues-mapping-data
+  cancel-in-progress: false
+
+jobs:
+  refresh_issues_mapping_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set snapshot date
+        run: |
+          SNAPSHOT_DATE="$(date -u +%F)"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE" >> "$GITHUB_ENV"
+          printf '%s\n' "$SNAPSHOT_DATE" > .issues_mapping_date
+          echo "Using snapshot date: $SNAPSHOT_DATE"
+
+      - name: Download issues mapping data
+        run: |
+          make download_issues_mapping_data SNAPSHOT_DATE="${SNAPSHOT_DATE}"
+
+      - name: Commit and push snapshot data
+        run: |
+          git add .issues_mapping_date "data/${SNAPSHOT_DATE}"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit for ${SNAPSHOT_DATE}."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): refresh issues mapping snapshot ${SNAPSHOT_DATE}"
+          git push origin HEAD:main

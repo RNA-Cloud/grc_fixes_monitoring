@@ -20,7 +20,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -30,7 +30,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v7
         with:
-          # Optional: pin for reproducibility, e.g. "0.5.24"
           version: "latest"
           enable-cache: true
 
@@ -41,3 +40,19 @@ jobs:
       - name: Run tests
         run: |
           make test
+
+      - name: Print snapshot date
+        run: |
+          echo "SNAPSHOT_DATE=$(make --no-print-directory print_snapshot_date)"
+
+      - name: Run script
+        run: |
+          make run
+
+      - name: Upload genome build report
+        uses: actions/upload-artifact@v4
+        with:
+          name: genome_and_annotation_report.md
+          path: output/genome_and_annotation_report.md
+          compression-level: 0
+          retention-days: 7
