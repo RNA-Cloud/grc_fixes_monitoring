@@ -10,8 +10,6 @@ on:
       - docs/**
       - README.md
       - LICENSE
-      - .giitignore
-      - .github/workflows/**
 
 jobs:
   
