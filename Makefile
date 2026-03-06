@@ -47,4 +47,4 @@ clean:
 
 # Run the tool
 run:
-	uv run python grc_fixes_monitor/grc_fixes.py -d -o grc_fixes.tsv
+	uv run python -m grc_fixes_monitor.parse_grc_fixes -d data/2026-03-06 -o output/grc_fixes.tsv
