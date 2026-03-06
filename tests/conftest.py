@@ -43,3 +43,11 @@ def pytest_collection_modifyitems(config, items):
         # Add slow marker to tests that make network calls
         if 'fetch' in item.name or 'network' in item.name:
             item.add_marker(pytest.mark.slow)
+
+@pytest.fixture
+def patch_type_file() -> Path:
+    return Path(__file__).parent / "data" / "patch_type"
+
+@pytest.fixture
+def alt_scaffold_placement_file() -> Path:
+    return Path(__file__).parent / "data" / "alt_scaffold_placement.txt"
