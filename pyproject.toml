@@ -19,6 +19,6 @@ dev = [
   "parse==1.21.1",
   "parse_type==0.6.6",
   "pytest==9.0.2",
-  "pytest-cov==7.0.0",
+  "pytest-cov==7.1.0",
   "pytest-mock==3.15.1",
 ]
