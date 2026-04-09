@@ -138,7 +138,7 @@ def test_main_generates_expected_output_file(
     with output_file.open(encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
 
-    assert len(rows) == 15
+    assert len(rows) == 16
     assert all(row["scaffold_type"] == "FIX" for row in rows)
     assert any(
         row["issue_id"] == "HG-1342" and row["alt_scaf_name"] == "HG1342_HG2282_PATCH"

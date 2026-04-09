@@ -26,6 +26,20 @@ class TestGRCIssuesParser:
         assert issue.locations[0].quality.method_acc1 == "component"
         assert issue.locations[0].quality.versions_mapped[0].acc == "BX511041"
 
+    def test_removal_of_newlines(self, chr10_issues_file: Path) -> None:
+        parser = GRCIssuesParser.from_file(chr10_issues_file)
+
+        issue = parser.get("HG-2334")
+        assert issue is not None
+        assert issue.description.count("\n") == 0
+
+    def test_HG_2334(self, chr10_issues_file: Path) -> None:
+        parser = GRCIssuesParser.from_file(chr10_issues_file)
+
+        issue = parser.get("HG-2334")
+        assert issue is not None
+        assert issue.description == "There is an insertion of a 'T' in the reference genome between position 471-472 of NM_001304717.1 (corresponding to position 87,864,104 of NC_000010.11). All 89 transcripts at this position are lacking the 'T' (MAF for T=0.00 for rs71022512). There is also a mismatch in the genome at position 511 of NM_001304717.1 (corresponding to position 87,864,144 of NC_000010.11). The reference genome has a 'G' at this position, but all 89 transcripts have a 'C' (MAF for G=0.0000 for rs2943772)."
+
     def test_get_returns_none_for_unknown_key(self, chr1_issues_file: Path) -> None:
         parser = GRCIssuesParser.from_file(chr1_issues_file)
 
@@ -47,7 +61,7 @@ class TestGRCIssuesParser:
     def test_from_directory_parses_and_merges_files(self, copied_test_data_dir: Path) -> None:
         parser = GRCIssuesParser.from_directory(copied_test_data_dir)
 
-        assert len(parser) == 399
+        assert len(parser) == 492
         assert "HG-1001" in parser
         assert "HG-1007" in parser
 
