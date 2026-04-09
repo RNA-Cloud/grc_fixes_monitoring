@@ -16,7 +16,7 @@ class TestScaffoldPlacementParser:
     def test_from_file_parses_expected_rows(self, alt_scaffold_placement_file: Path) -> None:
         parser = ScaffoldPlacementParser.from_file(alt_scaffold_placement_file)
 
-        assert len(parser.scaffold_placements) == 39
+        assert len(parser.scaffold_placements) == 48
         first = parser.scaffold_placements[0]
         assert first.alt_scaf_name == "HG1342_HG2282_PATCH"
         assert first.alt_scaf_acc == "KQ031383.1"

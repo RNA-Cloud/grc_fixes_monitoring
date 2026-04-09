@@ -11,7 +11,7 @@ class TestPatchTypeParser:
     def test_from_file_parses_expected_rows(self, patch_type_file: Path) -> None:
         parser = PatchTypeParser.from_file(patch_type_file)
 
-        assert len(parser.patch_types) == 21
+        assert len(parser.patch_types) == 22
         assert parser.patch_types[0] == PatchType(
             alt_scaf_name="HG1342_HG2282_PATCH",
             alt_scaf_acc="KQ031383.1",

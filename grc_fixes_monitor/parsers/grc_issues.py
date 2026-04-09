@@ -151,7 +151,7 @@ class GRCIssuesParser:
             summary=text("summary"),
             status=text("status"),
             status_text=text("status_text"),
-            description=text("description"),
+            description=text("description").replace("\n", "") if text("description") is not None else "",
             experiment_type=text("experiment_type"),
             external_info_type=text("external_info_type"),
             update=text("update"),

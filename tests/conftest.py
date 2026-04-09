@@ -56,6 +56,10 @@ def chr1_issues_file(data_file: Callable[[str], Path]) -> Path:
 def chr2_issues_file(data_file: Callable[[str], Path]) -> Path:
     return data_file("chr2_issues.xml")
 
+@pytest.fixture
+def chr10_issues_file(data_file: Callable[[str], Path]) -> Path:
+    return data_file("chr10_issues.xml")
+
 
 @pytest.fixture
 def copied_test_data_dir(tmp_path: Path, tests_data_dir: Path) -> Path:
