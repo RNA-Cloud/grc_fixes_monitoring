@@ -156,7 +156,7 @@ class GRCIssuesParser:
             external_info_type=text("external_info_type"),
             update=text("update"),
             resolution=text("resolution"),
-            resolution_text=text("resolution_text"),
+            resolution_text=text("resolution_text").replace("\n", "") if text("resolution_text") is not None else "",
             affect_version=text("affectVersion"),
             fix_version=text("fixVersion"),
             locations=tuple(GRCIssuesParser._parse_locations(issue_el)),

@@ -40,6 +40,13 @@ class TestGRCIssuesParser:
         assert issue is not None
         assert issue.description == "There is an insertion of a 'T' in the reference genome between position 471-472 of NM_001304717.1 (corresponding to position 87,864,104 of NC_000010.11). All 89 transcripts at this position are lacking the 'T' (MAF for T=0.00 for rs71022512). There is also a mismatch in the genome at position 511 of NM_001304717.1 (corresponding to position 87,864,144 of NC_000010.11). The reference genome has a 'G' at this position, but all 89 transcripts have a 'C' (MAF for G=0.0000 for rs2943772)."
 
+    def test_HG_2571(self, chr1_issues_file: Path) -> None:
+        parser = GRCIssuesParser.from_file(chr1_issues_file)
+
+        issue = parser.get("HG-2571")
+        assert issue is not None
+        assert issue.resolution_text == "NTIA01000116.1 changes the bases at rs1778540 and rs1778541 to represent the functional allele for GeneID: 317705 (VN1R5)"
+
     def test_get_returns_none_for_unknown_key(self, chr1_issues_file: Path) -> None:
         parser = GRCIssuesParser.from_file(chr1_issues_file)
 
