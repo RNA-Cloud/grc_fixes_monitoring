@@ -6993,7 +6993,7 @@
     <external_info_type>na</external_info_type>
     <update>2024-04-12T13:56:45.000-0400</update>
     <resolution>GRC Resolved by Electronic Means</resolution>
-    <resolution_text>NTIA01000116.1 changes the bases at rs1778540 and rs1778541 to represent the functional allele for GeneID: 317705 (VN1R5)</resolution_text>
+    <resolution_text>NTIA01000116.1 changes the bases at rs1778540 and rs1778541 &#xa;to represent the functional allele for GeneID: 317705 (VN1R5)</resolution_text>
     <AltPatchType>GRCh38:FIX</AltPatchType>
     <patchInfo gb_acc="MU273334.1" ref_acc="NW_025791757.1" region_name="REGION308"/>
     <affectVersion>GRCh38</affectVersion>
