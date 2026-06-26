@@ -12,13 +12,13 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-  "coverage==7.14.1",
-  "gherkin-official==39.1.0",
-  "ipykernel>=7.2.0",
+  "coverage==7.14.3",
+  "gherkin-official==41.0.0",
+  "ipykernel>=7.3.0",
   "Mako==1.3.10",
   "parse==1.22.1",
   "parse_type==0.6.6",
-  "pytest==9.0.3",
+  "pytest==9.1.1",
   "pytest-cov==7.1.0",
   "pytest-mock==3.15.1",
 ]
